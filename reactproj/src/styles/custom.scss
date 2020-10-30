@@ -1,0 +1,60 @@
+$primary: #232d2f;
+$secondary: #fc774c;
+
+@import "~bootstrap/scss/bootstrap.scss";
+
+.navbar {
+  height: 4.375rem;
+}
+
+.breadcrumb {
+  margin-top: 4.375rem;
+  margin-bottom: 0;
+  height: 3.875rem;
+}
+
+.activitydemo2 {
+  margin-top: 1.5rem;
+  width: 120rem;
+  height: 41.5rem;
+  object-fit: cover;
+  object-position: 0 -170px;
+}
+
+.main {
+  // width: 120rem;
+  margin: 2rem 17.5rem;
+  display: flex;
+}
+
+h3 {
+  font-size: 2.5rem;
+  color: #232d2f;
+  line-height: 1.5;
+}
+
+span {
+  font-size: 1.5rem;
+  font-weight: bold;
+  line-height: 1.5;
+  color: #4d4d4d;
+  margin-right: 4rem;
+}
+
+.btn {
+  width: 11.875rem;
+  height: 3.75rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  line-height: 1.5;
+  color: #ffffff;
+  border-radius: 30px;
+}
+
+.introduction {
+  width: 70rem;
+}
+
+.option {
+  width: 15rem;
+}
