@@ -28,6 +28,8 @@ app.get('/try-studio',(req, res)=>{
 
 app.use('/activity',require(__dirname + '/routes/activity'));
 app.use('/studio',require(__dirname + '/routes/studio'));
+app.use('/ticket_order',require(__dirname + '/routes/ticket_order'));
+app.use('/rent_order',require(__dirname + '/routes/rent_order'));
 
 app.use(express.static(__dirname + '/../public'));
 
