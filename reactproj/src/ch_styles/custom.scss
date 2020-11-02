@@ -1,0 +1,215 @@
+$primary: #232d2f;
+$secondary: #fc774c;
+$success: #2690df;
+$warning: #326bef;
+$info: #ab4fed;
+$light: #f780ae;
+
+@import "~bootstrap/scss/bootstrap.scss";
+
+.navbar {
+  height: 4.375rem;
+}
+
+.breadcrumb {
+  margin-top: 4.375rem;
+  margin-bottom: 0;
+  height: 3.875rem;
+}
+
+h3 {
+  margin-top: 2rem;
+  font-size: 2.5rem;
+  color: #232d2f;
+  line-height: 1.5;
+}
+
+h5 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  line-height: 1.5;
+  color: #44494a;
+}
+
+//-----------ActiityHead-----------//
+.activitydemo2 {
+  margin-top: 1.5rem;
+  width: 120rem;
+  height: 41.5rem;
+  object-fit: cover;
+  object-position: 0 -170px;
+}
+
+.main {
+  margin: 0rem 17.5rem;
+  padding: 0;
+}
+
+span {
+  font-size: 1.5rem;
+  font-weight: bold;
+  line-height: 1.5;
+  color: #44494a;
+  margin-right: 4rem;
+}
+
+.text-head {
+  margin-right: 4rem;
+  margin-top: 1.5rem;
+}
+
+.pagination {
+  width: 85rem;
+  margin-top: 4rem;
+  // margin: 4rem 17.5rem 0rem 17.5rem;
+  border-bottom: 1px solid rgba(112, 112, 112, 0.3);
+}
+
+.pag-name {
+  width: 10rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  line-height: 1.5;
+  color: rgba(68, 73, 74, 0.3);
+}
+
+.this-pag-name {
+  width: 10rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  line-height: 1.5;
+  color: #44494a;
+  border-bottom: 5px solid #2690df;
+}
+
+.btn-secondary {
+  width: 11.875rem;
+  height: 3.75rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  line-height: 1.5;
+  color: #ffffff;
+  border-radius: 30px;
+}
+
+.btn-sm {
+  width: 5.625rem;
+  height: 2.25rem;
+  font-size: 1rem;
+  color: #44494a;
+  border-radius: 30px;
+  margin-right: 1rem;
+}
+
+.introduction {
+  width: 70rem;
+}
+
+.option {
+  width: 15rem;
+}
+
+//-----------ActiityInfo-----------//
+
+.activity-info {
+  width: 67rem;
+  padding-right: 11rem;
+}
+
+.option-card {
+  width: 14.875rem;
+  height: 21.25rem;
+  margin: 3rem 1.5rem 1.5rem 1.5rem;
+  padding: 1.5rem;
+  border: 1px solid #909393;
+  border-radius: 5px;
+}
+
+.title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  line-height: 1.5;
+  color: #44494a;
+  margin-top: 3rem;
+  margin-bottom: 1.5rem;
+}
+
+.text-act {
+  font-size: 1rem;
+  line-height: 3;
+  color: #44494a;
+  margin-bottom: 3rem;
+}
+
+.text-card {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #44494a;
+}
+
+h6 {
+  font-size: 1rem;
+  font-weight: bold;
+  line-height: 3;
+  color: #232d2f;
+}
+
+//-----------ActiityOption-----------//
+.option-item {
+  margin: 3rem 17.5rem;
+  padding: 3rem;
+  border: 1px solid #909393;
+  border-radius: 5px;
+}
+
+h4 {
+  font-size: 2rem;
+  font-weight: Medium;
+  line-height: 3;
+  color: #232d2f;
+}
+
+.btn-success {
+  width: 11.875rem;
+  height: 3.75rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  line-height: 1.5;
+  color: #ffffff;
+  border-radius: 30px;
+}
+
+//-----------ActiityList-----------//
+.jumbotron01 {
+  margin-top: 4.375rem;
+  width: 120rem;
+  height: 47rem;
+  object-fit: cover;
+  // object-position: 0 -170px;
+}
+
+.search {
+  margin-top: 5rem;
+  margin-left: 7.25rem;
+  width: 55.125rem;
+  height: 4.75rem;
+  border: 1px solid #707070;
+  border-radius: 5px;
+}
+
+.category {
+  width: 21.75rem;
+  margin-top: 7.8rem;
+}
+
+.list {
+  margin-top: 7.8rem;
+  width: 63.25rem;
+}
+
+.card {
+  border-radius: 5px;
+  width: 19.6rem;
+  margin-top: 3.5rem;
+  margin-bottom: 4rem;
+}
