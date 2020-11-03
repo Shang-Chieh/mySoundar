@@ -41,7 +41,7 @@ function ActivityList(props){
                          </div>                 
                     </div>
                     <div className="d-flex justify-content-between flex-wrap">
-                         <div className="card">
+                        <div className="card">
                             <img src={activitydemo2} className="card-img-top" alt="" />
                             <div className="card-body">
                                 <p className="card-text">2020/09/17</p>

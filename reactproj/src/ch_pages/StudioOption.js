@@ -7,7 +7,7 @@ function StudioOption(props) {
     <>
       <StudioHead />
         <div className="option-item d-flex justify-content-between">
-            <div className="option-content">
+            <div className="option-content list-unstyled">
               <h4>1小時錄音</h4>
               <li>現場注意事項：</li>
               <li>1.請提早十分鐘在樓下準備並準時上樓</li>
@@ -53,7 +53,7 @@ function StudioOption(props) {
         </div>
 
         <div className="option-item d-flex justify-content-between">
-            <div className="option-content">
+            <div className="option-content list-unstyled">
               <h4>1.5小時錄音</h4>
               <li>現場注意事項：</li>
               <li>1.請提早十分鐘在樓下準備並準時上樓</li>
@@ -66,7 +66,7 @@ function StudioOption(props) {
         </div>
 
         <div className="option-item d-flex justify-content-between">
-            <div className="option-content">
+            <div className="option-content list-unstyled">
               <h4>2小時錄音</h4>
               <li>現場注意事項：</li>
               <li>1.請提早十分鐘在樓下準備並準時上樓</li>

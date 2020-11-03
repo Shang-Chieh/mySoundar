@@ -17,7 +17,7 @@ function ActivityHead(props){
                             <h5 className="text-head"><FaTags />標籤：
                                 <button type="button" className="btn btn-sm btn-outline-warning">講座</button>
                                 <button type="button" className="btn btn-sm btn-outline-info">商業</button>
-                                <button type="button" className="btn btn-sm btn-outline-light">教育</button>
+                                <button type="button" className="btn btn-sm btn-outline-danger">教育</button>
                             </h5>
                         </div>
                         <div className="option align-self-center">

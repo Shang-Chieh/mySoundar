@@ -3,7 +3,10 @@ $secondary: #fc774c;
 $success: #2690df;
 $warning: #326bef;
 $info: #ab4fed;
-$light: #f780ae;
+$danger: #f780ae;
+$dark: #44494a;
+$light: #f8f8f8;
+$muted: #909393;
 
 @import "~bootstrap/scss/bootstrap.scss";
 
@@ -212,4 +215,220 @@ h4 {
   width: 19.6rem;
   margin-top: 3.5rem;
   margin-bottom: 4rem;
+}
+
+//-----------StudioHead-----------//
+.img-area {
+  width: 41.5rem;
+  padding-right: 1rem;
+  margin-right: 2rem;
+}
+
+.img-demo {
+  height: 27rem;
+  border-radius: 5px;
+}
+
+.img-wrap {
+  margin-top: 3.5rem;
+  font-size: 4rem;
+  color: rgba(144, 147, 147, 0.3);
+}
+
+.img-wrap > img {
+  border-radius: 5px;
+  width: 7.25rem;
+}
+
+.studio-introduction {
+  padding-right: 2.5rem;
+}
+
+.text-yellow {
+  color: #fadb28;
+}
+
+.studio-pagination {
+  margin-top: 9.6rem;
+  height: 4.375rem;
+  background-color: #44494a;
+  padding: 1rem 17.5rem 0rem 17.5rem;
+}
+
+.s-pag-name {
+  width: 10rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  line-height: 1.5;
+  color: rgba(248, 248, 248, 0.3);
+}
+
+.this-s-pag-name {
+  width: 10rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  line-height: 1.5;
+  color: #f8f8f8;
+  border-bottom: 5px solid #2690df;
+}
+
+//-----------StudioInfo-----------//
+.jumbotron04 {
+  height: 30rem;
+  // object-fit: cover;
+  background-image: url(../ch_img/jumbotron04.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.jumbotron05 {
+  background-image: url(../ch_img/jumbotron05.jpg);
+  background-repeat: no-repeat;
+  // background-size: 100% 58.125rem;
+  background-size: cover;
+}
+
+.jumbotron06 {
+  height: 30rem;
+  // object-fit: cover;
+  background-image: url(../ch_img/jumbotron06.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.studio-info {
+  padding: 6rem 0;
+}
+
+.studio-attention {
+  padding: 6rem 0;
+}
+
+.felmenon > div > img {
+  width: 22.875rem;
+}
+
+.felmenon {
+  // padding: 0 13.875rem;
+  margin-top: 3rem;
+}
+
+.info-card > img {
+  width: 9.8rem;
+}
+
+.info-card {
+  padding: 2rem 4rem;
+}
+
+//-----------ActivityCart-----------//
+.order-check {
+  margin-top: 4.375rem;
+  padding: 1.5rem 3.75rem;
+}
+
+.order-title {
+  height: 3rem;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #44494a;
+  border-left: 1.25rem solid #44494a;
+  padding-left: 0.625rem;
+  margin-bottom: 3.625rem;
+}
+
+.total-amount {
+  background-color: rgba(144, 147, 147, 0.15);
+  margin-top: 1rem;
+  margin-bottom: 5rem;
+  padding: 1.5rem 2rem;
+}
+
+.total-area {
+  background-color: rgba(144, 147, 147, 0.15);
+  padding: 2rem;
+  margin-top: 3.1rem;
+}
+
+//-----------PaymentStep-----------//
+.step-wrap {
+  margin-top: 4.375rem;
+  padding: 2.375rem 1.5rem 1.5rem 1.5rem;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.step-box {
+  width: 21.875rem;
+  height: 12.5rem;
+  border: 1px solid #707070;
+  border-radius: 5px;
+  background-color: #fff;
+  padding: 1rem 7rem;
+  font-size: 1.375rem;
+}
+
+.step-box > img {
+  width: 6.25rem;
+  height: 6.25rem;
+  margin-bottom: 1rem;
+}
+
+//-----------Payment-----------//
+.data-area {
+  padding: 1.5rem 0;
+}
+
+.form-area {
+  border-radius: 5px;
+  background-color: #fff;
+  padding: 2.5rem;
+}
+
+//-----------ActivityOrder-----------//
+.list-title {
+  width: 20rem;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #44494a;
+  text-align: center;
+  border-left: 3px solid #44494a;
+  border-right: 3px solid #44494a;
+  // padding-left: 0.625rem;
+  // margin-bottom: 3.625rem;
+}
+
+.activity-order {
+  margin-top: 4.375rem;
+  padding: 5.875rem 0;
+}
+
+.order-list {
+  width: 60.125rem;
+  margin-left: 5.125rem;
+}
+
+.member-bar {
+  width: 20rem;
+}
+
+.o-pag-name {
+  width: 10rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  line-height: 1.5;
+  color: rgba(68, 73, 74, 0.3);
+}
+
+.this-o-pag-name {
+  width: 10rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  line-height: 1.5;
+  color: #44494a;
+  border-bottom: 5px solid #2690df;
+}
+
+.order-info {
+  padding: 1.5rem;
 }
