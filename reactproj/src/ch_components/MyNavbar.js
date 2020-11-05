@@ -4,7 +4,7 @@ import {
   Nav,
 } from 'react-bootstrap'
 
-import logofordark from '../ch_img/logofordark.svg'
+import logofordark from '../ch_svg/logofordark.svg'
 
 //選單連結要使用NavLink來取代Link,這個元件是特別針對像選單項目這種導覽所設計的,會有active點亮的效果(被點按到時的特定css)
 import { NavLink } from 'react-router-dom'
@@ -28,7 +28,7 @@ function MyNavbar(props) {
             <Nav.Link as={NavLink} to="/activitylist" >
               活動列表
             </Nav.Link>
-            <Nav.Link as={NavLink} to="/activityinfo">
+            <Nav.Link as={NavLink} to="/activitymain">
               活動
             </Nav.Link>
             <Nav.Link as={NavLink} to="/activitycart">

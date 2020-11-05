@@ -3,9 +3,6 @@ import Breadcrumb from './Breadcrumb'
 import { FaMapMarkerAlt } from 'react-icons/fa'
 import { MdKeyboardArrowLeft, MdKeyboardArrowRight } from 'react-icons/md'
 import { RiStarFill,RiStarHalfFill } from 'react-icons/ri'
-import s000101 from '../ch_img/S000101.jpg'
-import s000102 from '../ch_img/S000102.jpg'
-import s000103 from '../ch_img/S000103.jpg'
 
 
 function StudioHead(props){
@@ -14,12 +11,12 @@ function StudioHead(props){
             <Breadcrumb />
                 <div className="main d-flex">
                     <div className="img-area">
-                         <img src={s000101} className="img-demo"/>   
+                         <img src={"http://localhost:3000/ch_img/s000101.jpg"} className="img-demo"/>   
                          <div className="img-wrap d-flex justify-content-between">
                             <MdKeyboardArrowLeft />
-                            <img src={s000101} className="studio-head-img"/>   
-                            <img src={s000102} className="studio-head-img"/>   
-                            <img src={s000103} className="studio-head-img"/> 
+                            <img src={"http://localhost:3000/ch_img/s000101.jpg"} className="studio-head-img"/>   
+                            <img src={"http://localhost:3000/ch_img/s000102.jpg"} className="studio-head-img"/>   
+                            <img src={"http://localhost:3000/ch_img/s000103.jpg"} className="studio-head-img"/> 
                             <MdKeyboardArrowRight />  
                          </div>
                     </div>

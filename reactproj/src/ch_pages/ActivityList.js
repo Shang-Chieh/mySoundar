@@ -1,14 +1,12 @@
 import React from 'react'
 import { Link, Switch, withRouter } from 'react-router-dom'
-import jumbotron01 from '../ch_img/jumbotron01.jpg'
-import activitydemo2 from '../ch_img/activity_demo2.jpg'
 
 
 
 function ActivityList(props){
     return(
         <>
-            <img src={jumbotron01} className="jumbotron01"/>
+            <img src={"http://localhost:3000/ch_img/jumbotron01.jpg"} className="jumbotron01"/>
             <div className="main">
                 <div className="search">搜尋</div>
                 <div className="pagination d-flex justify-content-around">
@@ -42,7 +40,7 @@ function ActivityList(props){
                     </div>
                     <div className="d-flex justify-content-between flex-wrap">
                         <div className="card">
-                            <img src={activitydemo2} className="card-img-top" alt="" />
+                            <img src={"http://localhost:3000/ch_img/activitydemo2.jpg"} className="card-img-top" alt="" />
                             <div className="card-body">
                                 <p className="card-text">2020/09/17</p>
                                 <h5 className="card-title">跟上影音新浪潮｜Podcast企劃</h5>
@@ -51,7 +49,7 @@ function ActivityList(props){
                             </div>
                         </div>
                         <div className="card">
-                            <img src={activitydemo2} className="card-img-top" alt="" />
+                            <img src={"http://localhost:3000/ch_img/activitydemo2.jpg"} className="card-img-top" alt="" />
                             <div className="card-body">
                                 <p className="card-text">2020/09/17</p>
                                 <h5 className="card-title">跟上影音新浪潮｜Podcast企劃</h5>
@@ -60,7 +58,7 @@ function ActivityList(props){
                             </div>
                         </div>
                         <div className="card">
-                            <img src={activitydemo2} className="card-img-top" alt="" />
+                            <img src={"http://localhost:3000/ch_img/activitydemo2.jpg"} className="card-img-top" alt="" />
                             <div className="card-body">
                                 <p className="card-text">2020/09/17</p>
                                 <h5 className="card-title">跟上影音新浪潮｜Podcast企劃</h5>
@@ -69,7 +67,7 @@ function ActivityList(props){
                             </div>
                         </div>
                         <div className="card">
-                            <img src={activitydemo2} className="card-img-top" alt="" />
+                            <img src={"http://localhost:3000/ch_img/activitydemo2.jpg"} className="card-img-top" alt="" />
                             <div className="card-body">
                                 <p className="card-text">2020/09/17</p>
                                 <h5 className="card-title">跟上影音新浪潮｜Podcast企劃</h5>
@@ -78,7 +76,7 @@ function ActivityList(props){
                             </div>
                         </div>
                         <div className="card">
-                            <img src={activitydemo2} className="card-img-top" alt="" />
+                            <img src={"http://localhost:3000/ch_img/activitydemo2.jpg"} className="card-img-top" alt="" />
                             <div className="card-body">
                                 <p className="card-text">2020/09/17</p>
                                 <h5 className="card-title">跟上影音新浪潮｜Podcast企劃</h5>
@@ -87,7 +85,7 @@ function ActivityList(props){
                             </div>
                         </div>
                         <div className="card">
-                            <img src={activitydemo2} className="card-img-top" alt="" />
+                            <img src={"http://localhost:3000/ch_img/activitydemo2.jpg"} className="card-img-top" alt="" />
                             <div className="card-body">
                                 <p className="card-text">2020/09/17</p>
                                 <h5 className="card-title">跟上影音新浪潮｜Podcast企劃</h5>

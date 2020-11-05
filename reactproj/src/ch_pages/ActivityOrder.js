@@ -1,7 +1,6 @@
 import React from 'react'
 import { Link, Switch, withRouter } from 'react-router-dom'
 import MyNavbar from '../ch_components/MyNavbar'
-import QRCODE from '../ch_img/QRCODE.png'
 
 function ActivityOrder(props){
     return(
@@ -52,7 +51,7 @@ function ActivityOrder(props){
                                 </tr>
                                 <tr>
                                     <td>電子票券</td>
-                                    <td><img src={QRCODE} /></td>
+                                    <td><img src={"http://localhost:3000/ch_img/QRCODE.png"} /></td>
                                 </tr>
                             </tbody>
                         </table>
@@ -92,7 +91,7 @@ function ActivityOrder(props){
                                 </tr>
                                 <tr>
                                     <td>電子票券</td>
-                                    <td><img src={QRCODE} /></td>
+                                    <td><img src={"http://localhost:3000/ch_img/QRCODE.png"} /></td>
                                 </tr>
                             </tbody>
                         </table>

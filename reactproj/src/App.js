@@ -1,8 +1,6 @@
 import React from 'react';
 import MyNavbar from './ch_components/MyNavbar';
-import ActivityInfo from './ch_pages/ActivityInfo'
-import ActivityAttention from './ch_pages/ActivityAttention'
-import ActivityOption from './ch_pages/ActivityOption'
+import ActivityMain from './ch_pages/ActivityMain'
 import ActivityList from './ch_pages/ActivityList'
 import ActivityCart from './ch_pages/ActivityCart'
 import ActivityOrder from './ch_pages/ActivityOrder'
@@ -21,14 +19,8 @@ function App() {
       <>
         <MyNavbar />
         <Switch>
-            <Route path="/activityinfo">
-              <ActivityInfo />
-            </Route>
-            <Route path="/activityattention">
-              <ActivityAttention />
-            </Route>
-            <Route path="/activityoption">
-              <ActivityOption />
+            <Route path="/activitymain">
+              <ActivityMain />
             </Route>
             <Route path="/activitylist">
               <ActivityList />

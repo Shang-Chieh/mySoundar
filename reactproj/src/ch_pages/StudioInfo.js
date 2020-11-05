@@ -1,10 +1,6 @@
 import React from 'react'
 import { Link, Switch, withRouter } from 'react-router-dom'
 import StudioHead from '../ch_components/StudioHead'
-import headset from '../ch_img/headset.jpg'
-import audient from '../ch_img/audient.jpg'
-import microphone from '../ch_img/microphone.jpg'
-import felmenon from '../ch_img/felmenon.png'
 
 function StudioInfo(props) {
     return (
@@ -24,7 +20,7 @@ function StudioInfo(props) {
           <h5>不用調校，不用架，你人來就好。</h5>
           <div className="d-flex justify-content-between">
             <div className="card info-card">
-              <img src={audient} className="card-img-top" alt="" />
+              <img src={"http://localhost:3000/ch_img/audient.jpg"} className="card-img-top" alt="" />
               <div className="card-body">
                 <p className="card-text">Audient iD4 錄音介面</p>
                 <p className="card-text">2輸入/2輸出USB錄音介面
@@ -35,7 +31,7 @@ function StudioInfo(props) {
               </div>              
             </div>
             <div className="card info-card">
-              <img src={microphone} className="card-img-top" alt="" />
+              <img src={"http://localhost:3000/ch_img/microphone.jpg"} className="card-img-top" alt="" />
               <div className="card-body">
                 <p className="card-text">MXL 990 電容麥克風</p>
                 <p className="card-text">心型大震模電容麥克風
@@ -45,7 +41,7 @@ function StudioInfo(props) {
               </div>              
             </div>
             <div className="card info-card">
-              <img src={headset} className="card-img-top" alt="" />
+              <img src={"http://localhost:3000/ch_img/headset.jpg"} className="card-img-top" alt="" />
               <div className="card-body">
                 <p className="card-text">Superlux HD681 監聽耳機</p>
                 <p className="card-text">半開放式監聽耳機
@@ -57,11 +53,22 @@ function StudioInfo(props) {
             </div>
           </div>
           <div className="d-flex felmenon justify-content-center">
-            <div ><img src={felmenon}/></div>
+            <div ><img src={"http://localhost:3000/ch_img/felmenon.png"}/></div>
             <div className="d-flex align-items-center"><p>LAZI Corner 唯一採用 日本 Felmenon吸音板，<br/>
             解決回音，提升美感。有多種款式以及顏色。</p></div>
           </div>
         </div>
+        {/* <Card className="bg-dark text-white">
+  <Card.Img src="holder.js/100px270" alt="Card image" />
+  <Card.ImgOverlay>
+    <Card.Title>Card title</Card.Title>
+    <Card.Text>
+      This is a wider card with supporting text below as a natural lead-in to
+      additional content. This content is a little bit longer.
+    </Card.Text>
+    <Card.Text>Last updated 3 mins ago</Card.Text>
+  </Card.ImgOverlay>
+</Card> */}
         <div className="jumbotron jumbotron-fluid jumbotron05">
             <div className="container">
               <p className="text-light font-weight-bold">裝潢很 Chill，環境很 Cozy，以後都要來這裡錄音了<br/>

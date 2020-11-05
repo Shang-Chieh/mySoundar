@@ -1,9 +1,9 @@
 import React from 'react'
 import { Link, Switch, withRouter } from 'react-router-dom'
 import MyNavbar from './MyNavbar'
-import gift from '../ch_img/gift.svg'
-import method from '../ch_img/method.svg'
-import delivery from '../ch_img/delivery.svg'
+import gift from '../ch_svg/gift.svg'
+import method from '../ch_svg/method.svg'
+import delivery from '../ch_svg/delivery.svg'
 import { IoIosArrowForward } from 'react-icons/io'
 
 

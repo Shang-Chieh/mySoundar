@@ -1,19 +1,13 @@
 import React from 'react'
 import { Link, Switch, withRouter } from 'react-router-dom'
 import MyNavbar from '../ch_components/MyNavbar'
-// import jumbotron02 from '../ch_img/jumbotron02.jpg'
-import jumbotron03 from '../ch_img/jumbotron03.jpg'
-import s000101 from '../ch_img/S000101.jpg'
-import s000102 from '../ch_img/S000102.jpg'
-import s000103 from '../ch_img/S000103.jpg'
-import s000104 from '../ch_img/S000104.jpg'
 
 
 function StudioList(props){
     return(
         <>
             <MyNavbar />
-            <img src={jumbotron03} className="jumbotron01"/>
+            <img src={"http://localhost:3000/ch_img/jumbotron03.jpg"} className="jumbotron01"/>
             <div className="main">
                 <div className="search">搜尋</div>
                 <div className="pagination d-flex justify-content-around">
@@ -47,7 +41,7 @@ function StudioList(props){
                     </div>
                     <div className="d-flex justify-content-between flex-wrap">
                          <div className="card">
-                            <img src={s000101} className="card-img-top" alt="" />
+                            <img src={"http://localhost:3000/ch_img/s000101.jpg"} className="card-img-top" alt="" />
                             <div className="card-body">
                                 <h5 className="card-title">LAZI Corner</h5>
                                 <p>NT$ 500</p>
@@ -55,7 +49,7 @@ function StudioList(props){
                             </div>
                         </div>
                         <div className="card">
-                            <img src={s000102} className="card-img-top" alt="" />
+                            <img src={"http://localhost:3000/ch_img/s000102.jpg"} className="card-img-top" alt="" />
                             <div className="card-body">
                                 <h5 className="card-title">LAZI Corner</h5>
                                 <p>NT$ 500</p>
@@ -63,7 +57,7 @@ function StudioList(props){
                             </div>
                         </div>
                         <div className="card">
-                            <img src={s000103} className="card-img-top" alt="" />
+                            <img src={"http://localhost:3000/ch_img/s000103.jpg"} className="card-img-top" alt="" />
                             <div className="card-body">
                                 <h5 className="card-title">LAZI Corner</h5>
                                 <p>NT$ 500</p>
@@ -71,7 +65,7 @@ function StudioList(props){
                             </div>
                         </div>                        
                         <div className="card">
-                            <img src={s000104} className="card-img-top" alt="" />
+                            <img src={"http://localhost:3000/ch_img/s000104.jpg"} className="card-img-top" alt="" />
                             <div className="card-body">
                                 <h5 className="card-title">LAZI Corner</h5>
                                 <p>NT$ 500</p>

@@ -87,8 +87,8 @@ function Payment(props){
                         <label htmlFor="inputEmail3" class="col-sm-3 col-form-label">電子票券將寄至此電子郵箱</label>
                     </div>
                 </form>
-                <a className="text-reset text-decoration-none btn btn-success" href="/payment">前往付款<IoIosArrowDroprightCircle/></a>
-                {/* <button type="submit" class="btn btn-secondary">完成訂購<IoIosArrowDroprightCircle/></button> */}
+                {/* <a className="text-reset text-decoration-none btn btn-success" href="/payment">完成訂單<IoIosArrowDroprightCircle/></a> */}
+                <button type="submit" class="btn btn-secondary" onClick={()=>{props.history.push('/')}}>完成訂購<IoIosArrowDroprightCircle/></button>
             </div>
         </>
     )
