@@ -234,6 +234,9 @@ h4 {
 
 .img-wrap {
   margin-top: 3.5rem;
+}
+
+.img-wrap > span {
   font-size: 4rem;
   color: rgba(144, 147, 147, 0.3);
 }
@@ -247,30 +250,6 @@ h4 {
   padding-right: 2.5rem;
 }
 
-.studio-pagination {
-  margin-top: 9.6rem;
-  height: 4.375rem;
-  background-color: $dark;
-  padding: 1rem 17.5rem 0rem 17.5rem;
-}
-
-.s-pag-name {
-  width: 10rem;
-  font-size: 1.5rem;
-  font-weight: bold;
-  line-height: 1.5;
-  color: rgba(248, 248, 248, 0.3);
-}
-
-.this-s-pag-name {
-  width: 10rem;
-  font-size: 1.5rem;
-  font-weight: bold;
-  line-height: 1.5;
-  color: $light;
-  border-bottom: 5px solid #2690df;
-}
-
 .nav-pills-studio {
   padding: 0 17.5rem;
   .nav-link {
@@ -278,7 +257,7 @@ h4 {
     text-align: center;
     color: $light;
     border-radius: 0px;
-    border: 0px solid $dark;
+    border: none;
     opacity: 0.3;
   }
 
