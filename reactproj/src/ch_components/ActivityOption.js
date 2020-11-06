@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { Link, Switch, withRouter } from 'react-router-dom'
 import { MdAddCircleOutline,MdRemoveCircleOutline } from 'react-icons/md'
+import { Button, Collapse } from 'react-bootstrap'
 
 function ActivityOption(props) {
   // const [ activityData, setActivityData] = useState([
@@ -73,6 +74,38 @@ function ActivityOption(props) {
     </>
   )
 
+  function CancelBtn() {
+    const [open, setOpen] = useState(false);
+  
+    return (
+      <>
+        <Button
+          onClick={() => setOpen(!open)}
+          aria-controls="example-collapse-text"
+          aria-expanded={open}
+          className="btn btn-success"
+        >
+          選擇
+        </Button>
+
+        <Collapse in={open}>
+          <div id="example-collapse-text">
+          <p>選擇數量</p>
+                  <span>人數</span>
+                  <MdRemoveCircleOutline style={{ fontSize: '2rem' }}/>
+                  <span>1</span>
+                  <MdAddCircleOutline style={{ fontSize: '2rem' }}/>
+                  <hr/>
+                  <span>總金額</span>
+                  <span>NT$ 4000</span>
+                  <br/>
+                  <button type="button" className="btn btn-secondary" onClick={()=>{props.history.push('/activitycart')}}>立即購票</button>
+          </div>
+        </Collapse>
+      </>
+    );
+  }
+
 const display = (
   <>
     {activityData.map((value)=>{
@@ -86,26 +119,15 @@ const display = (
                 </div>
                 <div className="option-action">
                   <span>NT$ {value.ticket_price} / 每人</span>
-                  <button type="button" className="btn btn-success">取消選擇</button>
-                  <p>選擇數量</p>
-                  <span>人數</span>
-                  <MdRemoveCircleOutline />
-                  <span>1</span>
-                  <MdAddCircleOutline />
-                  <hr/>
-                  <span>總金額</span>
-                  <span>NT$ 4000</span>
-                  <br/>
-                  <button type="button" className="btn btn-secondary" onClick={()=>{props.history.push('/activitycart')}}>立即購票</button>
+                  <CancelBtn />
                 </div>
             </div>
       )
-    })}
-    
-
-        
+    })}        
   </>
 )
+
+
   return (
     <>
         {display}
@@ -117,7 +139,7 @@ const display = (
             </div>
             <div className="option-action">
               <span>NT$ 4500 / 每人</span>
-              <button type="submit" className="btn btn-success">選擇</button>
+              <CancelBtn />
             </div>
         </div>
 
@@ -130,7 +152,7 @@ const display = (
             </div>
             <div className="option-action">
               <span>NT$ 4300 / 每人</span>
-              <button type="button" className="btn btn-success">選擇</button>
+              <CancelBtn />
              </div>
         </div>
     </>

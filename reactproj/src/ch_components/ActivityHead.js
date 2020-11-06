@@ -91,7 +91,7 @@ function ActivityHeadTest(props) {
     return (
       <>
         <Breadcrumb/>
-        <img src={"http://localhost:3000/ch_img/activity_demo2.jpg"} className="activitydemo2"/>
+        <img src={"http://localhost:3000/ch_img/activity_demo9.jpg"} className="activitydemo2"/>
         {display}
         <div className="main">
           <ControlledTabs/>

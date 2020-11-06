@@ -46,6 +46,15 @@ router.get('/api', async(req,res)=>{
    res.json(await getListData(req));
 });
 
+//呈現單筆
+router.get('/api/:sid', async (req, res) => {
+    const sql = "SELECT * FROM activity WHERE sid=?";
+    const [results] = await db.query(sql, [req.params.sid]);
+    if (!results.length) return res.redirect('/activity/api');
+
+    res.json(results[0]);
+})
+
 // add(C)
 router.post('/add', async (req, res) => {
     const data = { ...req.body };
@@ -59,14 +68,7 @@ router.post('/add', async (req, res) => {
     });
 })
 
-//edit(U) 呈現單筆
-router.get('/edit/:sid', async (req, res) => {
-    const sql = "SELECT * FROM activity WHERE sid=?";
-    const [results] = await db.query(sql, [req.params.sid]);
-    if (!results.length) return res.redirect('/activity/api');
 
-    res.json(results[0]);
-})
 
 //edit(U) 修改單筆
 router.post('/edit/:sid', async (req, res)=>{
