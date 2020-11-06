@@ -85,7 +85,7 @@ function ActivityOption(props) {
           aria-expanded={open}
           className="btn btn-success"
         >
-          選擇
+          {open ? '取消選擇' : '選擇'}
         </Button>
 
         <Collapse in={open}>
