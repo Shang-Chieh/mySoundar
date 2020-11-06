@@ -1,13 +1,13 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
+import { withRouter } from 'react-router-dom'
 import Rater from 'react-rater'
 import 'react-rater/lib/react-rater.css'
-import Breadcrumb from './Breadcrumb'
+import Breadcrumb from '../ch_components/Breadcrumb'
 import { FaMapMarkerAlt } from 'react-icons/fa'
 import { MdKeyboardArrowLeft, MdKeyboardArrowRight } from 'react-icons/md'
-import { RiStarFill,RiStarHalfFill } from 'react-icons/ri'
 
 
-function StudioHead(props){
+function StudioMain(props){
     return(
         <>
             <Breadcrumb />
@@ -43,4 +43,4 @@ function StudioHead(props){
     )
 }
 
-export default StudioHead
+export default withRouter(StudioMain)

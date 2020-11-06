@@ -1,12 +1,10 @@
 import React from 'react'
 import { Link, Switch, withRouter } from 'react-router-dom'
-import StudioHead from '../ch_components/StudioHead'
 import { Card } from 'react-bootstrap'
 
-function StudioInfo(props) {
+function StudioInfo2(props) {
     return (
       <>
-        <StudioHead />
         <Card className="text-white w-100">
           <Card.Img src="http://localhost:3000/ch_img/jumbotron04.jpg" alt="Card image" />
           <Card.ImgOverlay className="main">
@@ -108,5 +106,5 @@ function StudioInfo(props) {
     )
   }
   
-  export default withRouter(StudioInfo)
+  export default withRouter(StudioInfo2)
   

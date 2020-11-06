@@ -25,9 +25,9 @@ function MyNavbar(props) {
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="mr-auto">
             {/* 把Nav.Link作為NavLink來使用 */}
-            <Nav.Link as={NavLink} to="/activitylist" >
+            {/* <Nav.Link as={NavLink} to="/activitylist" >
               活動列表
-            </Nav.Link>
+            </Nav.Link> */}
             <Nav.Link as={NavLink} to="/activitymain">
               活動
             </Nav.Link>
@@ -37,11 +37,14 @@ function MyNavbar(props) {
             <Nav.Link as={NavLink} to="/activityorder">
               活動訂單查詢
             </Nav.Link>
-            <Nav.Link as={NavLink} to="/studiolist" >
+            {/* <Nav.Link as={NavLink} to="/studiolist" >
               場地列表
-            </Nav.Link>
+            </Nav.Link> */}
             <Nav.Link as={NavLink} to="/studioinfo">
               場地
+            </Nav.Link>
+            <Nav.Link as={NavLink} to="/studiomain">
+              場地測試
             </Nav.Link>
           </Nav>
         </Navbar.Collapse>

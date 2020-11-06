@@ -245,7 +245,7 @@ function ActivityOrder(props){
                     <p>會員中心</p>
                 </div>
                 <div className="order-list">
-                    <div className="list-title">活動票券訂單查詢</div>
+                    <div className="list-title mx-auto">活動票券訂單查詢</div>
                     <ControlledTabs />                         
                 </div>
             </div>

@@ -247,10 +247,6 @@ h4 {
   padding-right: 2.5rem;
 }
 
-.text-yellow {
-  color: #fadb28;
-}
-
 .studio-pagination {
   margin-top: 9.6rem;
   height: 4.375rem;
@@ -276,29 +272,6 @@ h4 {
 }
 
 //-----------StudioInfo-----------//
-.jumbotron04 {
-  height: 30rem;
-  // object-fit: cover;
-  background-image: url("http://localhost:3000/ch_img/jumbotron04.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.jumbotron05 {
-  background-image: url("http://localhost:3000/ch_img/jumbotron05.jpg");
-  background-repeat: no-repeat;
-  // background-size: 100% 58.125rem;
-  background-size: cover;
-}
-
-.jumbotron06 {
-  height: 30rem;
-  // object-fit: cover;
-  background-image: url("http://localhost:3000/ch_img/jumbotron06.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
 .studio-info {
   padding: 6rem 0;
 }
