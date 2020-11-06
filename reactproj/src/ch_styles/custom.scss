@@ -220,7 +220,7 @@ h4 {
   margin-bottom: 4rem;
 }
 
-//-----------StudioHead-----------//
+//-----------StudioMain-----------//
 .img-area {
   width: 41.5rem;
   padding-right: 1rem;
@@ -269,6 +269,26 @@ h4 {
   line-height: 1.5;
   color: $light;
   border-bottom: 5px solid #2690df;
+}
+
+.nav-pills-studio {
+  padding: 0 17.5rem;
+  .nav-link {
+    width: 9.25rem;
+    text-align: center;
+    color: $light;
+    border-radius: 0px;
+    border: 0px solid $dark;
+    opacity: 0.3;
+  }
+
+  .nav-link.active,
+  .show > .nav-link {
+    color: $light;
+    border-bottom: 5px solid $success;
+    background-color: $dark;
+    opacity: 1;
+  }
 }
 
 //-----------StudioInfo-----------//

@@ -2,7 +2,7 @@ import React from 'react'
 import { Link, Switch, withRouter } from 'react-router-dom'
 import { Card } from 'react-bootstrap'
 
-function StudioInfo2(props) {
+function StudioInfo(props) {
     return (
       <>
         <Card className="text-white w-100">
@@ -106,5 +106,5 @@ function StudioInfo2(props) {
     )
   }
   
-  export default withRouter(StudioInfo2)
+  export default withRouter(StudioInfo)
   

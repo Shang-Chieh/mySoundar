@@ -1,7 +1,40 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import { Link, Switch, withRouter } from 'react-router-dom'
+import { Button, Collapse } from 'react-bootstrap'
 
-function StudioOption2(props) {
+function StudioOption(props) {
+
+  function CancelBtn() {
+    const [open, setOpen] = useState(false);
+  
+    return (
+      <>
+        <Button
+          onClick={() => setOpen(!open)}
+          aria-controls="collapse-studio"
+          aria-expanded={open}
+          className="btn btn-success"
+        >
+          {open ? '取消選擇' : '選擇'}
+        </Button>
+
+        <Collapse in={open}>
+          <div id="collapse-studio">
+          <br/>
+              <span>確認</span>
+              <span>2020-10-30</span>
+              <span>14:00-15:00</span>
+              <hr/>
+              <span>總金額</span>
+              <span>NT$ 500</span>
+              <br/>
+              <button type="button" className="btn btn-secondary">立即預訂</button>
+          </div>
+        </Collapse>
+      </>
+    );
+  }
+
   return (
     <>
         <div className="option-item d-flex justify-content-between">
@@ -37,16 +70,7 @@ function StudioOption2(props) {
             </div>
             <div className="option-action">
               <span>NT$ 500</span>
-              <button type="button" className="btn btn-success">取消選擇</button>
-              <br/>
-              <span>確認</span>
-              <span>2020-10-30</span>
-              <span>14:00-15:00</span>
-              <hr/>
-              <span>總金額</span>
-              <span>NT$ 500</span>
-              <br/>
-              <button type="button" className="btn btn-secondary">立即預訂</button>
+              <CancelBtn />
             </div>
         </div>
 
@@ -59,7 +83,7 @@ function StudioOption2(props) {
             </div>
             <div className="option-action">
               <span>NT$ 750</span>
-              <button type="button" className="btn btn-success">選擇</button>
+              <CancelBtn />
             </div>
         </div>
 
@@ -72,7 +96,7 @@ function StudioOption2(props) {
             </div>
             <div className="option-action">
               <span>NT$ 1000</span>
-              <button type="button" className="btn btn-success">選擇</button>
+              <CancelBtn />
             </div>
         </div>
 
@@ -81,4 +105,4 @@ function StudioOption2(props) {
   )
 }
 
-export default withRouter(StudioOption2)
+export default withRouter(StudioOption)

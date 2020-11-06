@@ -3,11 +3,38 @@ import { withRouter } from 'react-router-dom'
 import Rater from 'react-rater'
 import 'react-rater/lib/react-rater.css'
 import Breadcrumb from '../ch_components/Breadcrumb'
+import StudioInfo from '../ch_components/StudioInfo'
+import StudioOption from '../ch_components/StudioOption'
 import { FaMapMarkerAlt } from 'react-icons/fa'
 import { MdKeyboardArrowLeft, MdKeyboardArrowRight } from 'react-icons/md'
+import { Button, Tabs, Tab } from 'react-bootstrap';
 
 
 function StudioMain(props){
+
+    function ControlledTabs() {
+        const [key, setKey] = useState('option');
+      
+        return (
+          <Tabs
+            id="controlled-tab-studio"
+            activeKey={key}
+            onSelect={(k) => setKey(k)}
+            className="nav-pills-studio d-flex justify-content-around bg-dark"
+          >
+            <Tab eventKey="option" title="方案">
+                <div className="main"><StudioOption /></div>                
+            </Tab>
+            <Tab eventKey="info" title="介紹">
+                <StudioInfo />              
+            </Tab>
+            <Tab eventKey="evaluation" title="評價">
+            <div className="main"><h1>評價</h1></div>
+            </Tab>
+          </Tabs>
+        );
+      }
+
     return(
         <>
             <Breadcrumb />
@@ -29,16 +56,11 @@ function StudioMain(props){
                         <Rater rating={4.8} total={5} interactive={false}/>
                         4.8(25)</span>
                         <p><FaMapMarkerAlt />地點：台北市大安區復興南路一段390號</p>
-                        <button type="" className="btn btn-secondary btn-lg">選擇方案</button>
+                        <Button variant="secondary" className="btn-lg" onClick={()=>{props.history.push('/studiomain')}}>選擇方案</Button>
                     </div>
                 </div>
 
-                <div className="studio-pagination d-flex justify-content-between">
-                    <div className="text-center s-pag-name"><a className="text-reset text-decoration-none" href="/studiooption">方案</a></div>
-                    <div className="text-center this-s-pag-name"><a className="text-reset text-decoration-none" href="/studioinfo">介紹</a></div>
-                    <div className="text-center s-pag-name"><a className="text-reset text-decoration-none" href="">評價</a></div>
-                </div>    
-   
+                <ControlledTabs/>   
         </>
     )
 }

@@ -40,11 +40,8 @@ function MyNavbar(props) {
             {/* <Nav.Link as={NavLink} to="/studiolist" >
               場地列表
             </Nav.Link> */}
-            <Nav.Link as={NavLink} to="/studioinfo">
-              場地
-            </Nav.Link>
             <Nav.Link as={NavLink} to="/studiomain">
-              場地測試
+              場地
             </Nav.Link>
           </Nav>
         </Navbar.Collapse>

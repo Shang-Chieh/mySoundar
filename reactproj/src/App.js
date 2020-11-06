@@ -4,8 +4,6 @@ import ActivityMain from './ch_pages/ActivityMain'
 import ActivityCart from './ch_pages/ActivityCart'
 import ActivityOrder from './ch_pages/ActivityOrder'
 import StudioMain from './ch_pages/StudioMain'
-import StudioOption from './ch_pages/StudioOption'
-import StudioInfo from './ch_pages/StudioInfo'
 import Payment from './ch_pages/Payment'
 import { BrowserRouter as Router, Route, Link, Switch } from 'react-router-dom';
 import './App.css';
@@ -28,12 +26,6 @@ function App() {
             </Route>
             <Route path="/studiomain">
               <StudioMain />
-            </Route>
-            <Route path="/studiooption">
-              <StudioOption />
-            </Route>
-            <Route path="/studioinfo">
-              <StudioInfo />
             </Route>
             <Route path="/payment">
               <Payment />
