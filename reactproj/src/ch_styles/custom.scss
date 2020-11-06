@@ -54,7 +54,9 @@ span {
   font-weight: bold;
   line-height: 1.5;
   color: $dark;
-  margin-right: 4rem;
+  // margin-right: 4rem;
+  // align-items: center;
+  // display: flex;
 }
 
 .text-head {
@@ -169,7 +171,7 @@ h6 {
 h4 {
   font-size: 2rem;
   font-weight: Medium;
-  line-height: 3;
+  line-height: 1.5;
   color: $primary;
 }
 
