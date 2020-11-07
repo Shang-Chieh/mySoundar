@@ -1,4 +1,3 @@
-$selectBtn: #2690df;
 $textDark: #232d2f;
 $textDarkGray: #44494a;
 $textGray: #909393;
@@ -6,6 +5,7 @@ $textlight: #f8f8f8;
 
 @import "~bootstrap/scss/bootstrap.scss";
 @import "./ch_activity.scss";
+@import "./ch_studio.scss";
 
 .navbar {
   height: 4.375rem;
@@ -50,62 +50,6 @@ $textlight: #f8f8f8;
   width: 19.6rem;
   margin-top: 3.5rem;
   margin-bottom: 4rem;
-}
-
-//-----------StudioMain-----------//
-.img-area {
-  width: 41.5rem;
-  margin-right: 3rem;
-}
-
-.img-demo {
-  height: 27rem;
-  border-radius: 5px;
-}
-
-.img-wrap {
-  margin-top: 3.5rem;
-}
-
-.studio-img {
-  border-radius: 5px;
-}
-
-.img-wrap > span {
-  font-size: 4rem;
-  color: rgba(144, 147, 147, 0.3);
-}
-
-li > .BrainhubCarousel__thumbnail {
-  background-color: #fff;
-}
-
-// .react-rater-star.is-active-half:before {
-//   color: rgba(250, 219, 40, 0.8);
-// }
-
-.studio-introduction {
-  padding-right: 2.5rem;
-}
-
-.nav-pills-studio {
-  padding: 0 17.5rem;
-  .nav-link {
-    width: 9.25rem;
-    text-align: center;
-    color: $light;
-    border-radius: 0px;
-    border: none;
-    opacity: 0.3;
-  }
-
-  .nav-link.active,
-  .show > .nav-link {
-    color: $light;
-    border-bottom: 5px solid $success;
-    background-color: $textDarkGray;
-    opacity: 1;
-  }
 }
 
 //-----------StudioInfo-----------//

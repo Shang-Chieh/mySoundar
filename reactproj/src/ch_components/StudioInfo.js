@@ -5,22 +5,25 @@ import { Card } from 'react-bootstrap'
 function StudioInfo(props) {
     return (
       <>
-        <Card className="text-white w-100">
+      
+        <Card className="">
           <Card.Img src="http://localhost:3000/ch_img/jumbotron04.jpg" alt="Card image" />
-          <Card.ImgOverlay className="main">
-            <Card.Title>LAZI Corner</Card.Title>
-            <Card.Text>
-              全台北最懂 podcaster 的錄音室<br/>
-              這裡讓你的唇舌可以盡情發揮，優異的設備、很 Lazy 的空間，<br/>
-              此外更齊聚全台熱門 Podcast 節目主持人！<br/>
-              想加入 Podcast 這個大家庭，那麼這裡會是你的首選。
-            </Card.Text>
+          <Card.ImgOverlay>
+            <div className="container">
+              <Card.Title><h1>LAZI Corner</h1></Card.Title>
+              <Card.Text>
+                全台北最懂 podcaster 的錄音室<br/>
+                這裡讓你的唇舌可以盡情發揮，優異的設備、很 Lazy 的空間，<br/>
+                此外更齊聚全台熱門 Podcast 節目主持人！<br/>
+                想加入 Podcast 這個大家庭，那麼這裡會是你的首選。
+              </Card.Text>
+            </div>            
           </Card.ImgOverlay>
         </Card>
 
 
 
-        
+
         <div className="container studio-info">
           <h3>我們的設備</h3>
           <h5>不用調校，不用架，你人來就好。</h5>
@@ -65,13 +68,15 @@ function StudioInfo(props) {
           </div>
         </div>
 
-        <Card className="text-white w-100">
+        <Card className="">
           <Card.Img src="http://localhost:3000/ch_img/jumbotron05.jpg" alt="Card image" />
-          <Card.ImgOverlay className="main">
+          <Card.ImgOverlay>
+          <div className="container">
             <Card.Text>
               裝潢很 Chill，環境很 Cozy，以後都要來這裡錄音了<br/>
               - 寂寞拖延 節目主持人 Allen
             </Card.Text>
+            </div>
           </Card.ImgOverlay>
         </Card>
 
@@ -91,15 +96,17 @@ function StudioInfo(props) {
           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3615.0049657993086!2d121.5412041507614!3d25.03390554437016!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442abd379a5ec97%3A0xec12a62666a81e3d!2zMTA25Y-w5YyX5biC5aSn5a6J5Y2A5b6p6IiI5Y2X6Lev5LiA5q61Mzkw6Jmf!5e0!3m2!1szh-TW!2stw!4v1604138400418!5m2!1szh-TW!2stw" width="896" height="450" frameborder="0" style={{border:0}} allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
         </div>
         
-        <Card className="text-white w-100">
+        <Card className="">
           <Card.Img src="http://localhost:3000/ch_img/jumbotron06.jpg" alt="Card image" />
-          <Card.ImgOverlay className="main">
-            <Card.Title>一起 LAZI ?</Card.Title>
+          <Card.ImgOverlay>
+          <div className="container">
+            <Card.Title><h1>一起 LAZI ?</h1></Card.Title>
             <Card.Text>
               想要成為podcast? 有錄音的需求?<br/>
               一起成為錄音夥伴<br/>
               我們的收費標準是每小時500元，趕快訂位吧。
             </Card.Text>
+            </div>
           </Card.ImgOverlay>
         </Card>
       </>

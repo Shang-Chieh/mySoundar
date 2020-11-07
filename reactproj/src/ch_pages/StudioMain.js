@@ -38,18 +38,20 @@ function StudioMain(props){
         getStudioFromServer()
     }, [])
   
-  const display= (
+  const introduction= (
     <>
       { studioData.map((value=>{
         return (
           <div className="studio-introduction" key={value.sid}>
             <h2>{value.studio_name}</h2>
-            <h3 className="text-success">NT$ {value.studio_price}</h3>
+            <h3>NT$ {value.studio_price} </h3>
             <span>顧客評價
             <Rater rating={4.5} total={5} interactive={false}/>
             {value.studio_review}(25)</span>
-            <p><FaMapMarkerAlt />地點：{value.studio_location}</p>
-            <Button variant="secondary" className="btn-lg" onClick={()=>{props.history.push('/studiomain')}}>選擇方案</Button>
+            <div className="location-wrap mt-4">
+              <FaMapMarkerAlt className="mr-2"/>地點：{value.studio_location}
+            </div>
+            <button className="btn btn-option btn-lg" onClick={()=>{props.history.push('/studiomain')}}>選擇方案</button>
           </div>
         )
       }))}
@@ -91,10 +93,10 @@ function StudioMain(props){
           slides={this.state.slides}
           onChange={this.onchange}
         />
-        <div className="img-wrap d-flex">
-          <span><MdKeyboardArrowLeft /></span>
+        <div className="img-wrap d-flex justify-content-between align-items-center">
+          <MdKeyboardArrowLeft style={{fontSize:'3.5rem', color: 'rgba(144, 147, 147, 0.3)'}}/>
           <Dots number={this.state.thumbnails.length} thumbnails={this.state.thumbnails} value={this.state.value} onChange={this.onchange} number={this.state.slides.length} />
-          <span><MdKeyboardArrowRight /></span> 
+          <MdKeyboardArrowRight style={{fontSize:'3.5rem', color: 'rgba(144, 147, 147, 0.3)'}}/>
         </div>
       </div>
       );
@@ -109,16 +111,16 @@ function StudioMain(props){
             id="controlled-tab-studio"
             activeKey={key}
             onSelect={(k) => setKey(k)}
-            className="nav-pills-studio d-flex justify-content-around bg-dark"
+            className="nav-pills-studio d-flex justify-content-around"
           >
             <Tab eventKey="option" title="方案">
-                <div className="main"><StudioOption /></div>                
+                <div><StudioOption /></div>                
             </Tab>
             <Tab eventKey="info" title="介紹">
                 <StudioInfo />              
             </Tab>
             <Tab eventKey="evaluation" title="評價">
-            <div className="main"><h1>評價</h1></div>
+            <div><h1>評價</h1></div>
             </Tab>
           </Tabs>
         );
@@ -127,11 +129,13 @@ function StudioMain(props){
     return(
         <>
             <Breadcrumb />
-            <div className="main d-flex">
-              <MyCarousel />
-              {display}
-            </div>
-            <ControlledTabs/>   
+            <div className="studio-main">
+              <div className="container d-flex">
+                <MyCarousel />
+                {introduction}
+              </div>
+              <ControlledTabs/>    
+            </div>             
         </>
     )
 }

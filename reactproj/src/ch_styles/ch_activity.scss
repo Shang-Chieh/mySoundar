@@ -1,61 +1,59 @@
-.btn-option {
-  width: 11.875rem;
-  height: 3.75rem;
-  font-size: 1.5rem;
-  font-weight: bold;
-  line-height: 1.5;
-  color: #ffffff;
-  border-radius: 30px;
-  background-color: #fc774c;
-}
-
-.btn-option:hover {
-  color: #fff;
-  background-color: #fb5a26;
-  border-color: #fb511a;
-}
-
-.btn-select {
-  width: 11.875rem;
-  height: 3.75rem;
-  font-size: 1.5rem;
-  font-weight: bold;
-  line-height: 1.5;
-  color: #ffffff;
-  border-radius: 30px;
-  background-color: #1d7bc2;
-}
-
-.btn-select:hover {
-  color: #fff;
-  background-color: #1d7bc2;
-  border-color: #1b74b7;
-}
-
-h3 {
-  font-size: 2.5rem;
-  line-height: 1.5;
-  margin: 0;
-}
-
-h4 {
-  font-size: 2rem;
-  font-weight: Medium;
-  line-height: 1.5;
-  margin-bottom: 8px;
-}
-
-h5 {
-  font-size: 1.5rem;
-  font-weight: bold;
-  line-height: 1.5;
-  margin: 0;
-}
-
 //-----ActivityMain-----//
 .activity-main {
   margin-top: 24px;
+  .btn-option {
+    width: 11.875rem;
+    height: 3.75rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    line-height: 1.5;
+    color: #ffffff;
+    border-radius: 30px;
+    background-color: #fc774c;
+  }
 
+  .btn-option:hover {
+    color: #fff;
+    background-color: #fb5a26;
+    border-color: #fb511a;
+  }
+
+  .btn-select {
+    width: 11.875rem;
+    height: 3.75rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    line-height: 1.5;
+    color: #ffffff;
+    border-radius: 30px;
+    background-color: #2690df;
+  }
+
+  .btn-select:hover {
+    color: #fff;
+    background-color: #1d7bc2;
+    border-color: #1b74b7;
+  }
+
+  h3 {
+    font-size: 2.5rem;
+    line-height: 1.5;
+    margin: 0;
+  }
+
+  h4 {
+    font-size: 2rem;
+    font-weight: Medium;
+    line-height: 1.5;
+    margin-bottom: 8px;
+  }
+
+  h5 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    line-height: 1.5;
+    margin: 0;
+  }
   .container {
     max-width: 1360px;
     // width: 1360px;
@@ -63,6 +61,7 @@ h5 {
     padding: 0;
   }
 
+  //-------------------------------------//
   .introduction {
     width: 81%;
     overflow: hidden;
