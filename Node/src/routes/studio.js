@@ -60,8 +60,8 @@ router.post('/add', async (req, res) => {
     });
 })
 
-//edit(U) 呈現單筆
-router.get('/edit/:sid', async (req, res) => {
+//呈現單筆
+router.get('/api/:sid', async (req, res) => {
     const sql = "SELECT * FROM studio WHERE sid=?";
     const [results] = await db.query(sql, [req.params.sid]);
     if (!results.length) return res.redirect('/studio/api');
