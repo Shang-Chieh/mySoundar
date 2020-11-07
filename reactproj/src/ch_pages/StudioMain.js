@@ -25,9 +25,9 @@ function StudioMain(props){
           (<img src={"http://localhost:3000/ch_img/s000103.jpg"} className="img-demo"/>),
         ],
         thumbnails: [
-          (<img src={"http://localhost:3000/ch_img/s000101.jpg"} className="studio-head-img w-100"/>),
-          (<img src={"http://localhost:3000/ch_img/s000102.jpg"} className="studio-head-img w-100"/>),
-          (<img src={"http://localhost:3000/ch_img/s000103.jpg"} className="studio-head-img w-100"/>),
+          (<img src={"http://localhost:3000/ch_img/s000101.jpg"} className="studio-img w-100"/>),
+          (<img src={"http://localhost:3000/ch_img/s000102.jpg"} className="studio-img w-100"/>),
+          (<img src={"http://localhost:3000/ch_img/s000103.jpg"} className="studio-img w-100"/>),
         ],
       }
       this.onchange = this.onchange.bind(this);
@@ -48,7 +48,7 @@ function StudioMain(props){
         />
         <div className="img-wrap d-flex">
           <span><MdKeyboardArrowLeft /></span>
-          <Dots number={this.state.thumbnails.length} thumbnails={this.state.thumbnails} value={this.state.value} onChange={this.onchange} number={this.state.slides.length}/>
+          <Dots number={this.state.thumbnails.length} thumbnails={this.state.thumbnails} value={this.state.value} onChange={this.onchange} number={this.state.slides.length} />
           <span><MdKeyboardArrowRight /></span> 
         </div>
       </div>
@@ -101,13 +101,3 @@ function StudioMain(props){
 
 export default withRouter(StudioMain)
 
-                    {/* <div className="img-area">
-                         <img src={"http://localhost:3000/ch_img/s000101.jpg"} className="img-demo"/>   
-                         <div className="img-wrap d-flex justify-content-between">
-                            <MdKeyboardArrowLeft />
-                            <img src={"http://localhost:3000/ch_img/s000101.jpg"} className="studio-head-img"/>   
-                            <img src={"http://localhost:3000/ch_img/s000102.jpg"} className="studio-head-img"/>   
-                            <img src={"http://localhost:3000/ch_img/s000103.jpg"} className="studio-head-img"/> 
-                            <MdKeyboardArrowRight />  
-                         </div>
-                    </div> */}

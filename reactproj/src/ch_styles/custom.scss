@@ -223,8 +223,7 @@ h4 {
 //-----------StudioMain-----------//
 .img-area {
   width: 41.5rem;
-  padding-right: 1rem;
-  margin-right: 2rem;
+  margin-right: 3rem;
 }
 
 .img-demo {
@@ -236,15 +235,22 @@ h4 {
   margin-top: 3.5rem;
 }
 
+.studio-img {
+  border-radius: 5px;
+}
+
 .img-wrap > span {
   font-size: 4rem;
   color: rgba(144, 147, 147, 0.3);
 }
 
-.img-wrap > img {
-  border-radius: 5px;
-  width: 7.25rem;
+li > .BrainhubCarousel__thumbnail {
+  background-color: #fff;
 }
+
+// .react-rater-star.is-active-half:before {
+//   color: rgba(250, 219, 40, 0.8);
+// }
 
 .studio-introduction {
   padding-right: 2.5rem;
