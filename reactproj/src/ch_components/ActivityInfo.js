@@ -6,9 +6,9 @@ import OptionCard from './OptionCard'
 function ActivityInfo(props) {
   return (
     <>
-      <div className="d-flex">
+      <div className="container d-flex">
         <div className="activity-info">
-            <h5 className="title"><FaHotjar className="text-secondary"/> Podcast崛起、影片正夯 </h5>
+            <h5 className="title"><FaHotjar style={{ color: '#fc774c'}}/> Podcast崛起、影片正夯 </h5>
             <p className="text-act">影音內容將為品牌帶來流量高峰，品牌如何做好影片、踏入Podcast？<br/>
                 為品牌創造聲量、讓內容變現，跨足行銷新藍海！<br/>
                 ➤ 從企劃到行銷，建立「影」、「音」內容的立體觀，設計互動橋段<br/>
@@ -16,7 +16,7 @@ function ActivityInfo(props) {
                 適合對象: 品牌經營者、數位行銷人、影音廣告者
             </p>
             <hr />
-            <h5 className="title"><FaHotjar className="text-secondary"/> 精彩課綱 </h5>
+            <h5 className="title mt-5"><FaHotjar style={{ color: '#fc774c'}}/> 精彩課綱 </h5>
             <h6>Part 1. 10:00-12:00 #SoundOn</h6>
             <p className="text-act">引領台灣聲音風潮 ／顧立楷(SoundOn共同創辦人)<br/>
                 Podcast聲音新商機 ｜品牌也可以是播客！搶下爆紅的聽覺新藍海<br/> 
@@ -43,7 +43,7 @@ function ActivityInfo(props) {
                 案例：《初心》、《返校》、《行者》 最活耀品牌社群「全聯」、#NIKE不客氣了、#礁溪老爺《大人的任性》
             </p>
             <hr />
-            <h5 className="title"><FaMapMarkedAlt className="text-secondary"/> 交通資訊 </h5>
+            <h5 className="title mt-5"><FaMapMarkedAlt style={{ color: '#fc774c'}}/> 交通資訊 </h5>
             <p>活動地點：台北市大安區復興南路一段390號</p>
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3615.0049657993086!2d121.5412041507614!3d25.03390554437016!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442abd379a5ec97%3A0xec12a62666a81e3d!2zMTA25Y-w5YyX5biC5aSn5a6J5Y2A5b6p6IiI5Y2X6Lev5LiA5q61Mzkw6Jmf!5e0!3m2!1szh-TW!2stw!4v1604138400418!5m2!1szh-TW!2stw" width="896" height="450" frameborder="0" style={{border:0}} allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
         </div>

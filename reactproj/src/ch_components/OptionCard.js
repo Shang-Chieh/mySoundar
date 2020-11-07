@@ -1,22 +1,14 @@
 import React, { useState, useEffect } from 'react'
-import { FaRegCalendarAlt } from 'react-icons/fa'
+import { FaRegCalendarAlt, FaRegClock } from 'react-icons/fa'
 import { withRouter } from 'react-router-dom'
-// import { Button, Tabs, Tab } from 'react-bootstrap';
-
 
 
 function OptionCard(props) {
     const [activityData, setActivityData] = useState([])
-    // const [dataLoading, setDataLoading] = useState(false)
   
     async function getActivityFromServer() {
-      // 開啟載入指示
-      // setDataLoading(true)
-  
-      // 連接的伺服器資料網址
       const url = 'http://localhost:5566/activity/api/1'
   
-      // 注意header資料格式要設定，伺服器才知道是json格式
       const request = new Request(url, {
         method: 'GET',
         headers: new Headers({
@@ -46,11 +38,11 @@ function OptionCard(props) {
       
          {activityData.map((value) => {
             return (
-                <div className="option-card" key={value.sid}>
+                <div className="option-card mt-3" key={value.sid}>
                     <h5>{value.activity_name}</h5>
-                    <p className="text-card"><FaRegCalendarAlt />{value.activity_date}</p>
-                    {/* <p className="text-card">15:00~17:00</p> */}
-                    <button type="" className="btn btn-secondary" onClick={()=>{props.history.push('/activitymain')}}>選擇方案</button>
+                    <div className="text-card my-3"><FaRegCalendarAlt /><span>{value.activity_date.slice(0,10)}</span></div>
+                    <div className="text-card my-3"><FaRegClock /><span>{value.activity_date.slice(11)}</span></div>
+                    <button type="" className="btn btn-option" onClick={()=>{props.history.push('/activitymain')}}>選擇方案</button>
                 </div>    
               )
             })}

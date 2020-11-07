@@ -47,15 +47,14 @@ function ActivityCart(props){
                             </div>
                             <div>
                                 <span>優惠券</span>
-                                <button className="btn btn-secondary">選擇優惠券</button>
+                                <button className="btn btn-secondary btn-sm">選擇優惠券</button>
                             </div>
                         </div>
                         <div className="total-amount">
                             <span>總金額</span>
                             <span>NT$ 4,000</span>
                         </div>
-                        <a className="text-reset text-decoration-none btn btn-success" href="/payment">前往付款<IoIosArrowDroprightCircle/></a>
-                        {/* <button className="btn btn-success">前往付款<IoIosArrowDroprightCircle/></button> */}
+                        <button className="btn btn-success" onClick={()=>{props.history.push('/payment')}}>前往付款<IoIosArrowDroprightCircle/></button>
                     </div>
                 </div>
                 

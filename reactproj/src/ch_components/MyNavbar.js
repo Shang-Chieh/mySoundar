@@ -12,7 +12,7 @@ function MyNavbar(props) {
     <>
       <Navbar
         collapseOnSelect
-        bg="primary"
+        bg="dark"
         variant="dark"
         fixed="top"
       >

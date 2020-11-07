@@ -1,14 +1,11 @@
-$primary: #232d2f;
-$secondary: #fc774c;
-$success: #2690df;
-$warning: #326bef;
-$info: #ab4fed;
-$danger: #f780ae;
-$dark: #44494a;
-$light: #f8f8f8;
-$muted: #909393;
+$selectBtn: #2690df;
+$textDark: #232d2f;
+$textDarkGray: #44494a;
+$textGray: #909393;
+$textlight: #f8f8f8;
 
 @import "~bootstrap/scss/bootstrap.scss";
+@import "./ch_activity.scss";
 
 .navbar {
   height: 4.375rem;
@@ -17,172 +14,7 @@ $muted: #909393;
 .breadcrumb {
   margin-top: 4.375rem;
   margin-bottom: 0;
-  height: 3.875rem;
-}
-
-h3 {
-  margin-top: 2rem;
-  font-size: 2.5rem;
-  color: $primary;
-  line-height: 1.5;
-}
-
-h5 {
-  font-size: 1.5rem;
-  font-weight: bold;
-  line-height: 1.5;
-  color: $dark;
-}
-
-//-----------ActiityHead-----------//
-.activitydemo2 {
-  margin-top: 1.5rem;
-  width: 120rem;
-  height: 41.5rem;
-  object-fit: cover;
-  // object-fit: center;
-  // object-position: 0 -170px;
-}
-
-.main {
-  margin: 0rem 17.5rem;
-  padding: 0;
-}
-
-span {
-  font-size: 1.5rem;
-  font-weight: bold;
-  line-height: 1.5;
-  color: $dark;
-  // margin-right: 4rem;
-  // align-items: center;
-  // display: flex;
-}
-
-.text-head {
-  margin-right: 4rem;
-  margin-top: 1.5rem;
-}
-
-.pagination {
-  width: 85rem;
-  margin-top: 4rem;
-  // margin: 4rem 17.5rem 0rem 17.5rem;
-  border-bottom: 1px solid rgba(112, 112, 112, 0.3);
-}
-
-.pag-name {
-  width: 10rem;
-  font-size: 1.5rem;
-  font-weight: bold;
-  line-height: 1.5;
-  color: rgba(68, 73, 74, 0.3);
-}
-
-.this-pag-name {
-  width: 10rem;
-  font-size: 1.5rem;
-  font-weight: bold;
-  line-height: 1.5;
-  color: $dark;
-  border-bottom: 5px solid #2690df;
-}
-
-.btn-secondary {
-  width: 11.875rem;
-  height: 3.75rem;
-  font-size: 1.5rem;
-  font-weight: bold;
-  line-height: 1.5;
-  color: #ffffff;
-  border-radius: 30px;
-}
-
-.btn-sm {
-  width: 5.625rem;
-  height: 2.25rem;
-  font-size: 1rem;
-  color: $dark;
-  border-radius: 30px;
-  margin-right: 1rem;
-}
-
-.introduction {
-  width: 70rem;
-}
-
-.option {
-  width: 15rem;
-}
-
-//-----------ActiityInfo-----------//
-
-.activity-info {
-  width: 67rem;
-  padding-right: 11rem;
-}
-
-.option-card {
-  width: 14.875rem;
-  height: 21.25rem;
-  margin: 3rem 1.5rem 1.5rem 1.5rem;
-  padding: 1.5rem;
-  border: 1px solid $muted;
-  border-radius: 5px;
-}
-
-.title {
-  font-size: 1.5rem;
-  font-weight: bold;
-  line-height: 1.5;
-  color: $dark;
-  margin-top: 3rem;
-  margin-bottom: 1.5rem;
-}
-
-.text-act {
-  font-size: 1rem;
-  line-height: 3;
-  color: $dark;
-  margin-bottom: 3rem;
-}
-
-.text-card {
-  font-size: 1rem;
-  line-height: 1.5;
-  color: $dark;
-}
-
-h6 {
-  font-size: 1rem;
-  font-weight: bold;
-  line-height: 3;
-  color: $primary;
-}
-
-//-----------ActiityOption-----------//
-.option-item {
-  margin: 3rem 0rem;
-  padding: 3rem;
-  border: 1px solid $muted;
-  border-radius: 5px;
-}
-
-h4 {
-  font-size: 2rem;
-  font-weight: Medium;
-  line-height: 1.5;
-  color: $primary;
-}
-
-.btn-success {
-  width: 11.875rem;
-  height: 3.75rem;
-  font-size: 1.5rem;
-  font-weight: bold;
-  line-height: 1.5;
-  color: #ffffff;
-  border-radius: 30px;
+  height: 38px;
 }
 
 //-----------ActiityList-----------//
@@ -271,7 +103,7 @@ li > .BrainhubCarousel__thumbnail {
   .show > .nav-link {
     color: $light;
     border-bottom: 5px solid $success;
-    background-color: $dark;
+    background-color: $textDarkGray;
     opacity: 1;
   }
 }
@@ -312,8 +144,8 @@ li > .BrainhubCarousel__thumbnail {
   height: 3rem;
   font-size: 2rem;
   font-weight: bold;
-  color: $dark;
-  border-left: 1.25rem solid $dark;
+  color: $textDarkGray;
+  border-left: 1.25rem solid $textDarkGray;
   padding-left: 0.625rem;
   margin-bottom: 3.625rem;
 }
@@ -371,10 +203,10 @@ li > .BrainhubCarousel__thumbnail {
   width: 20rem;
   font-size: 2rem;
   font-weight: bold;
-  color: $dark;
+  color: $textDarkGray;
   text-align: center;
-  border-left: 3px solid $dark;
-  border-right: 3px solid $dark;
+  border-left: 3px solid $textDarkGray;
+  border-right: 3px solid $textDarkGray;
   // padding-left: 0.625rem;
   // margin-bottom: 3.625rem;
 }
@@ -406,39 +238,10 @@ li > .BrainhubCarousel__thumbnail {
   font-size: 1.5rem;
   font-weight: bold;
   line-height: 1.5;
-  color: $dark;
+  color: $textDarkGray;
   border-bottom: 5px solid #2690df;
 }
 
 .order-info {
   padding: 1.5rem;
 }
-
-//-----------ActivityHead_Tab-----------//
-.nav-pills {
-  .nav-link {
-    border-radius: 0px;
-    border: 0px solid $dark;
-    opacity: 0.3;
-  }
-
-  .nav-link.active,
-  .show > .nav-link {
-    color: $dark;
-    border-bottom: 5px solid $success;
-    background-color: #fff;
-    opacity: 1;
-  }
-}
-
-.nav-tabs {
-  margin-top: 4rem;
-  font-size: 1.5rem;
-  font-weight: bold;
-  border-bottom: solid 1px rgba(112, 112, 112, 0.3);
-  background-color: #fff;
-}
-
-// .tab-content{
-
-// }

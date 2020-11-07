@@ -1,8 +1,10 @@
 import React, { useState, useEffect } from 'react'
 import { FaRegCalendarAlt,FaMapMarkerAlt,FaTags } from 'react-icons/fa'
 import { withRouter } from 'react-router-dom'
-import { Button, Tabs, Tab } from 'react-bootstrap';
+import { Tabs, Tab } from 'react-bootstrap';
 import Breadcrumb from '../ch_components/Breadcrumb'
+
+//方案票價、活動內容、注意事項
 import ActivityAttention from '../ch_components/ActivityAttention'
 import ActivityInfo from '../ch_components/ActivityInfo'
 import ActivityOption from '../ch_components/ActivityOption'
@@ -13,9 +15,7 @@ function ActivityMain(props) {
     const [activityData, setActivityData] = useState([])
   
     async function getActivityFromServer() {
-      // 連接的伺服器資料網址
       const url = 'http://localhost:5566/activity/api/1'
-  
       const request = new Request(url, {
         method: 'GET',
         headers: new Headers({
@@ -31,42 +31,50 @@ function ActivityMain(props) {
       console.log(arr)
       // 設定資料
       setActivityData(arr)
-    }
-  
+    } 
    
-  
     // 一開始就會開始載入資料
     useEffect(() => {
         getActivityFromServer()
     }, [])
    
-    const display = (
+
+    //活動資訊
+    const introduction = (
       <>
-      <div className="main d-flex">
+      <div className="container d-flex">
          {activityData.map((value) => {
             return (
-
               <div className="introduction" key={value.sid}>
                 <h3>{value.activity_name}</h3>
-                <span><FaRegCalendarAlt />日期：{value.activity_date}</span>
-                <span><FaMapMarkerAlt />地點：{value.activity_location}</span>
-                <h5 className="text-head"><FaTags />標籤：
-                  <button type="button" className="btn btn-sm btn-outline-warning">講座</button>
-                  <button type="button" className="btn btn-sm btn-outline-info">商業</button>
-                  <button type="button" className="btn btn-sm btn-outline-danger">教育</button>
-                </h5>
+                <div className="d-flex mt-4">
+                  <div className="activity-wrap mr-4">
+                    <FaRegCalendarAlt className="mr-2"/>日期：{value.activity_date}
+                  </div>
+                  <div className="activity-wrap">
+                   <FaMapMarkerAlt className="mr-2"/>地點：{value.activity_location}
+                  </div>
+                </div>
+
+                <div className="activity-wrap mt-4">
+                  <FaTags className="mr-2"/>標籤：
+                  <button type="button" className="btn btn-tag1">講座</button>
+                  <button type="button" className="btn btn-tag2">商業</button>
+                  <button type="button" className="btn btn-tag3">教育</button>
+                </div>               
               </div>       
               )
             })}
           <div className="option align-self-center">
-            <Button variant="secondary" onClick={()=>{props.history.push('/activitymain')}}>選擇方案</Button>
+            <button className="btn-option btn" onClick={()=>{props.history.push('/activitymain')}}>選擇方案</button>
           </div>     
        </div>    
      </>
     )
     
+  //切換方案票價、活動內容、注意事項  
     function ControlledTabs() {
-      const [key, setKey] = useState('home');
+      const [key, setKey] = useState('option');
     
       return (
         <Tabs
@@ -75,13 +83,13 @@ function ActivityMain(props) {
           onSelect={(k) => setKey(k)}
           className="nav-pills d-flex justify-content-around"
         >
-          <Tab eventKey="home" title="方案票價">
+          <Tab eventKey="option" title="方案票價">
             <ActivityOption/>
           </Tab>
-          <Tab eventKey="profile" title="活動內容">
+          <Tab eventKey="info" title="活動內容">
             <ActivityInfo/>
           </Tab>
-          <Tab eventKey="contact" title="注意事項">
+          <Tab eventKey="attention" title="注意事項">
             <ActivityAttention/>
           </Tab>
         </Tabs>
@@ -91,41 +99,16 @@ function ActivityMain(props) {
     return (
       <>
         <Breadcrumb/>
-        <img src={"http://localhost:3000/ch_img/activity_demo9.jpg"} className="activitydemo2"/>
-        {display}
-        <div className="main">
-          <ControlledTabs/>
+        <div className="activity-main">
+          <img src={"http://localhost:3000/ch_img/activity_demo9.jpg"} className="activitydemo"/>
+          {introduction}          
+          <div className="container">
+            <ControlledTabs/>
+          </div>     
         </div>      
-     
       </>
     )
   }
   
   export default withRouter(ActivityMain)
 
-    //         
-    //             <div className="main d-flex">
-    //                     <div className="introduction">
-    //                         <h3>跟上影音新浪潮｜Podcast企劃+影音內容+影音行銷</h3>
-    //                         <span><FaRegCalendarAlt />日期：2020/09/17  15:00~17:00</span>
-    //                         <span><FaMapMarkerAlt />地點：台北市大安區復興南路一段390號</span>
-    //                         <h5 className="text-head"><FaTags />標籤：
-    //                             <button type="button" className="btn btn-sm btn-outline-warning">講座</button>
-    //                             <button type="button" className="btn btn-sm btn-outline-info">商業</button>
-    //                             <button type="button" className="btn btn-sm btn-outline-danger">教育</button>
-    //                         </h5>
-    //                     </div>
-    //                     <div className="option align-self-center">
-    //                         <button type="" className="btn btn-secondary">選擇方案</button>
-    //                     </div>  
-                                  
-    //             </div>
-    //             <div className="main">
-    //                  <div className="pagination d-flex justify-content-around">
-    //                     <div className="text-center pag-name"><a className="text-reset text-decoration-none" href="/activityoption">方案票價</a></div>
-    //                     <div className="text-center this-pag-name"><a className="text-reset text-decoration-none" href="/activityinfo">活動內容</a></div>
-    //                     <div className="text-center pag-name"><a className="text-reset text-decoration-none" href="/activityattention">注意事項</a></div>
-    //                 </div>         
-    //             </div>
-
-    //     </>

@@ -1,7 +1,6 @@
 @import "./ch_styles/custom.scss";
 
 body {
-  // margin-top: 4.375rem;
   font-size: 16px;
 }
 
@@ -10,21 +9,4 @@ $container-max-widths: (
   md: 720px,
   lg: 960px,
   xl: 1360px,
-) !default;
-
-// $grid-gutter-width: 30px !default;
-
-// .grid-gutter-width {
-//   &.container {
-//     padding-left: $grid-gutter-width / 2;
-//     padding-right: $grid-gutter-width / 2;
-//   }
-//   .row {
-//     margin-left: -($grid-gutter-width / 2);
-//     margin-right: -($grid-gutter-width / 2);
-//   }
-//   .col {
-//     padding-left: $grid-gutter-width / 2;
-//     padding-right: $grid-gutter-width / 2;
-//   }
-// }
+);
