@@ -13,6 +13,52 @@ import { Button, Tabs, Tab } from 'react-bootstrap';
 
 
 function StudioMain(props){
+    const [studioData, setStudioData] = useState([])  
+    async function getStudioFromServer() {
+      // 連接的伺服器資料網址
+      const url = 'http://localhost:5566/studio/api/1'  
+      const request = new Request(url, {
+        method: 'GET',
+        headers: new Headers({
+          Accept: 'application/json',
+          'Content-Type': 'appliaction/json',
+        }),
+      })  
+      const response = await fetch(request)
+      const data = await response.json()
+      let arr = []
+      arr.push(data)
+      console.log(arr)
+      // 設定資料
+      setStudioData(arr)
+    }
+  
+    // 一開始就會開始載入資料
+    useEffect(() => {
+        getStudioFromServer()
+    }, [])
+  
+  const display= (
+    <>
+      { studioData.map((value=>{
+        return (
+          <div className="studio-introduction" key={value.sid}>
+            <h2>{value.studio_name}</h2>
+            <h3 className="text-success">NT$ {value.studio_price}</h3>
+            <span>顧客評價
+            <Rater rating={4.5} total={5} interactive={false}/>
+            {value.studio_review}(25)</span>
+            <p><FaMapMarkerAlt />地點：{value.studio_location}</p>
+            <Button variant="secondary" className="btn-lg" onClick={()=>{props.history.push('/studiomain')}}>選擇方案</Button>
+          </div>
+        )
+      }))}
+    </>
+  )
+
+
+
+
   //圖片切換
   class MyCarousel extends React.Component {
     constructor() {
@@ -31,8 +77,7 @@ function StudioMain(props){
         ],
       }
       this.onchange = this.onchange.bind(this);
-    }
-  
+    } 
   
     onchange(value) {
       this.setState({ value });
@@ -83,16 +128,8 @@ function StudioMain(props){
         <>
             <Breadcrumb />
             <div className="main d-flex">
-            <MyCarousel />
-              <div className="studio-introduction">
-                  <h2>LAZI Corner</h2>
-                  <h3 className="text-success">NT$ 500</h3>
-                  <span>顧客評價
-                  <Rater rating={4.8} total={5} interactive={false}/>
-                  4.8(25)</span>
-                  <p><FaMapMarkerAlt />地點：台北市大安區復興南路一段390號</p>
-                  <Button variant="secondary" className="btn-lg" onClick={()=>{props.history.push('/studiomain')}}>選擇方案</Button>
-              </div>
+              <MyCarousel />
+              {display}
             </div>
             <ControlledTabs/>   
         </>
