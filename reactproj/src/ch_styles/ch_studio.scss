@@ -203,10 +203,6 @@
     font-weight: bold;
   }
 
-  // .counter .d-flex {
-  //   width: 190px;
-  // }
-
   #example-collapse-studio {
     width: 470px;
   }
@@ -227,6 +223,10 @@
     background-color: rgba($color: $textDark, $alpha: 0.3);
   }
 
+  .card-img-overlay .container {
+    margin-top: 200px;
+  }
+
   .card-one {
     padding-top: 270px;
   }
@@ -234,5 +234,35 @@
   h1 {
     font-size: 4rem;
     font-weight: medium;
+  }
+
+  .card-text > h5 {
+    font-size: 1.5rem;
+    font-weight: normal;
+  }
+
+  //-----------StudioInfo-----------//
+  .studio-info {
+    padding: 96px 0;
+  }
+
+  .studio-attention {
+    padding: 96px 0;
+  }
+
+  .felmenon > div > img {
+    width: 366px;
+  }
+
+  .felmenon {
+    margin-top: 48px;
+  }
+
+  // .info-card > img {
+  //   // width: 157px;
+  // }
+
+  .info-card {
+    padding: 32px 64px;
   }
 }

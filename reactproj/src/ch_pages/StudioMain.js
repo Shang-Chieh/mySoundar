@@ -9,7 +9,7 @@ import StudioInfo from '../ch_components/StudioInfo'
 import StudioOption from '../ch_components/StudioOption'
 import { FaMapMarkerAlt } from 'react-icons/fa'
 import { MdKeyboardArrowLeft, MdKeyboardArrowRight } from 'react-icons/md'
-import { Button, Tabs, Tab } from 'react-bootstrap';
+import { Tabs, Tab } from 'react-bootstrap';
 
 
 function StudioMain(props){
@@ -68,14 +68,14 @@ function StudioMain(props){
       this.state = {
         value: 0,
         slides: [
-          (<img src={"http://localhost:3000/ch_img/s000101.jpg"} className="img-demo"/>),
-          (<img src={"http://localhost:3000/ch_img/s000102.jpg"} className="img-demo"/>),
-          (<img src={"http://localhost:3000/ch_img/s000103.jpg"} className="img-demo"/>),
+          (<img src={"http://localhost:3000/ch_img/s000101.jpg"} className="img-demo" alt="" />),
+          (<img src={"http://localhost:3000/ch_img/s000102.jpg"} className="img-demo" alt="" />),
+          (<img src={"http://localhost:3000/ch_img/s000103.jpg"} className="img-demo" alt="" />),
         ],
         thumbnails: [
-          (<img src={"http://localhost:3000/ch_img/s000101.jpg"} className="studio-img w-100"/>),
-          (<img src={"http://localhost:3000/ch_img/s000102.jpg"} className="studio-img w-100"/>),
-          (<img src={"http://localhost:3000/ch_img/s000103.jpg"} className="studio-img w-100"/>),
+          (<img src={"http://localhost:3000/ch_img/s000101.jpg"} className="studio-img w-100" alt="" />),
+          (<img src={"http://localhost:3000/ch_img/s000102.jpg"} className="studio-img w-100" alt="" />),
+          (<img src={"http://localhost:3000/ch_img/s000103.jpg"} className="studio-img w-100" alt="" />),
         ],
       }
       this.onchange = this.onchange.bind(this);

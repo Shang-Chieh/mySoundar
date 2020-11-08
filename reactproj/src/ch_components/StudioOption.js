@@ -2,8 +2,37 @@ import React, { useState, useEffect } from 'react'
 import { Link, Switch, withRouter } from 'react-router-dom'
 import { Button, Collapse } from 'react-bootstrap'
 
+// import DatePicker from 'react-datepicker'
+// import "react-datepicker/dist/react-datepicker.css";
+
+// import 'rc-time-picker/assets/index.css';
+// import ReactDom from 'react-dom';
+// import moment from 'moment';
+// import TimePicker from 'rc-time-picker';
+
+
+
 function StudioOption(props) {
 
+  // ReactDom.render(
+  //   <TimePicker defaultValue={moment()} showSecond={false} minuteStep={15} />
+  // , document.getElementById('timePicker'));
+  
+  // function MyDatePicker() {
+  //   const [startDate, setStartDate] = useState(new Date());
+  // return (
+  //   <DatePicker
+  //     selected={startDate}
+  //     onChange={date => setStartDate(date)}
+  //     dateFormat="yyyy-MM-dd"
+  //     isClearable
+  //     placeholderText="選擇日期"
+  //   />
+  // );  
+  // }
+  
+
+  //選擇按鈕切換
   function CancelBtn() {
     const [open, setOpen] = useState(false);
   
@@ -50,8 +79,10 @@ function StudioOption(props) {
             <li>1.請提早十分鐘在樓下準備並準時上樓</li>
             <li>2.下一組預定來賓有權準時進入，請準時結束使用空間，</li>
             <li>避免影響節目錄製</li>
-            <p>選擇日期</p>
-            <p>選擇時段</p>            
+            {/* <div className="mt-5"><span className="mr-2">選擇日期</span><MyDatePicker /></div> */}
+            {/* <div className="mt-5"><span className="mr-2">選擇時段</span><div id="timePicker"></div></div> */}
+           
+           
           </div>
           <div className="option-action d-flex flex-wrap justify-content-between">
             <span style={{fontSize : '2rem', fontWeight:'bold'}}>NT$ 500</span>
@@ -66,8 +97,6 @@ function StudioOption(props) {
             <li>1.請提早十分鐘在樓下準備並準時上樓</li>
             <li>2.下一組預定來賓有權準時進入，請準時結束使用空間，</li>
             <li>避免影響節目錄製</li>
-            <p>選擇日期</p>
-            <p>選擇時段</p>            
           </div>
           <div className="option-action d-flex flex-wrap justify-content-between">
             <span style={{fontSize : '2rem', fontWeight:'bold'}}>NT$ 750</span>
@@ -82,8 +111,6 @@ function StudioOption(props) {
             <li>1.請提早十分鐘在樓下準備並準時上樓</li>
             <li>2.下一組預定來賓有權準時進入，請準時結束使用空間，</li>
             <li>避免影響節目錄製</li>            
-            <p>選擇日期</p>
-            <p>選擇時段</p>            
           </div>
           <div className="option-action d-flex flex-wrap justify-content-between">
             <span style={{fontSize : '2rem', fontWeight:'bold'}}>NT$ 1000</span>
