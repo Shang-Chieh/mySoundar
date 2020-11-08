@@ -14,6 +14,7 @@ function ActivityOrder(props){
               onClick={() => setOpen(!open)}
               aria-controls="open-order"
               aria-expanded={open}
+              className="btn-order"
             >
               查看訂單細節
             </Button>
@@ -240,13 +241,15 @@ function ActivityOrder(props){
     return(
         <>
             <MyNavbar />
-            <div className="container activity-order d-flex">
-                <div className="member-bar">
-                    <p>會員中心</p>
-                </div>
-                <div className="order-list">
-                    <div className="list-title mx-auto">活動票券訂單查詢</div>
-                    <ControlledTabs />                         
+            <div className="activity-order">
+                <div className="container d-flex">
+                    <div className="member-bar">
+                        <p>會員中心</p>
+                    </div>
+                    <div className="activity-order-list">
+                        <div className="list-title mx-auto">活動票券訂單查詢</div>
+                        <ControlledTabs />                         
+                    </div>
                 </div>
             </div>
         </>
