@@ -195,7 +195,12 @@
   }
 
   .option-content > li {
-    font-size: 1.5rem;
+    font-size: 1rem;
+  }
+
+  .option-content > h4 {
+    font-weight: bold;
+    margin-bottom: 16px;
   }
 
   .counter > span {
