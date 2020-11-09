@@ -60,8 +60,6 @@ router.post('/add', async (req, res) => {
 })
 
 
-
-
 //edit(U) 呈現單筆
 // router.get('/edit/:sid', async (req, res) => {
 //     // const sql = "SELECT * FROM ticket_order WHERE sid=?";
