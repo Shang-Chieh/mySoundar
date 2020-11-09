@@ -197,25 +197,17 @@
     border-radius: 5px;
     margin-bottom: 48px;
   }
-
   .option-content {
     width: calc(100 - 470px);
     padding-right: 30px;
   }
-
-  .option-action {
-    width: 470px;
-  }
-
   .option-content > li {
     font-size: 1rem;
   }
-
   .option-content > h4 {
     font-weight: bold;
     margin-bottom: 16px;
   }
-
   .counter > span {
     font-size: 1.5rem;
     font-weight: bold;
@@ -225,7 +217,25 @@
     width: 190px;
   }
 
-  #ticket-option {
-    width: 470px;
+  .accordion {
+    .card {
+      background-color: transparent;
+      border: none;
+      border-radius: 0;
+    }
+    .card-header {
+      padding: 0;
+      margin-bottom: 0;
+      background-color: transparent;
+      border: none;
+      width: 470px;
+    }
+    .card-body {
+      padding: 0;
+    }
+  }
+
+  .add-collect .d-none {
+    color: $textGray;
   }
 }
