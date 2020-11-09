@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
-import { Link, Switch, withRouter } from 'react-router-dom'
+import { withRouter } from 'react-router-dom'
 import { MdAddCircleOutline,MdRemoveCircleOutline } from 'react-icons/md'
-import { Button, Collapse, Accordion, Card, Header, Toggle, Alert } from 'react-bootstrap'
+import { Button, Accordion, Card } from 'react-bootstrap'
 
 function ActivityOption(props) {
   const [activityData, setActivityData] = useState([])
@@ -31,26 +31,6 @@ function ActivityOption(props) {
       getActivityFromServer()
   }, [])
 
-  function AddCounter() {
-    if (quantity>0, quantity <3){
-      return (
-        setQuantity(quantity + 1)         
-      )     
-    } else {
-      return (
-        alert("1234")
-      )
-    }
-  }
-
-  function MinusCounter() {
-    if (quantity>0) {
-      return (
-        setQuantity(quantity - 1)
-      )
-    } else {}
-  }
-
   const display = (
     <>
         {activityData.map((value)=>{
@@ -79,11 +59,19 @@ function ActivityOption(props) {
                         <div className="d-flex justify-content-between counter align-items-center">
                           <span>人數</span>
                           <div className="d-flex justify-content-between align-items-center">
-                            {/* <MdRemoveCircleOutline style={{ fontSize: '2rem' }} onClick={() => {setQuantity(quantity - 1)}}/> */}
-                            <MdRemoveCircleOutline style={{ fontSize: '2rem' }} onClick={() => MinusCounter(1)} />
+                            <MdRemoveCircleOutline style={{ fontSize: '2rem', color: quantity ==1 ? '#909393' : '#232d2f' }} 
+                            onClick={() => {
+                              quantity === 1 ?
+                              alert('數量不可低於一張')
+                              : setQuantity(quantity - 1)
+                              }}/>
                             <span style={{ fontSize: '2rem' }}>{quantity}</span>
-                            {/* <MdAddCircleOutline style={{ fontSize: '2rem' }} onClick={() => {setQuantity(quantity + 1)}}/> */}
-                            <MdAddCircleOutline style={{ fontSize: '2rem' }} onClick={()=>AddCounter(1)}/>
+                            <MdAddCircleOutline style={{ fontSize: '2rem', color: quantity ==3 ? '#909393' : '#232d2f' }} 
+                            onClick={() => {
+                              quantity === 3 ?
+                              alert('每人限購三張')
+                              : setQuantity(quantity + 1)
+                              }}/>
                           </div>              
                       </div>                      
                       <hr/>

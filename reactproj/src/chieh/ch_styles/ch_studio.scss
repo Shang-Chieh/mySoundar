@@ -115,7 +115,7 @@
     font-family: "Roboto";
     font-size: 3rem;
     font-weight: Medium;
-    color: $textDark;
+    color: #232d2f;
     margin-bottom: 32px;
   }
 
@@ -141,7 +141,7 @@
   .nav-pills-studio {
     padding: 0 17.5rem;
     height: 4rem;
-    background-color: $textDarkGray;
+    background-color: #232d2f;
     border: none;
     margin-top: 150px;
     font-size: 2rem;
@@ -150,7 +150,7 @@
       width: 9.25rem;
       height: 4rem;
       text-align: center;
-      color: $textlight;
+      color: #f8f8f8;
       border-radius: 0px;
       border: none;
       opacity: 0.3;
@@ -158,9 +158,9 @@
 
     .nav-link.active,
     .show > .nav-link {
-      color: $textlight;
+      color: #f8f8f8;
       border-bottom: 5px solid #2690df;
-      background-color: $textDarkGray;
+      background-color: #232d2f;
       opacity: 1;
     }
   }
@@ -180,7 +180,7 @@
   //-----------StudioOption-----------//
   .option-item {
     padding: 48px;
-    border: 1px solid $textGray;
+    border: 1px solid #909393;
     border-radius: 5px;
     margin-bottom: 48px;
   }
@@ -224,8 +224,8 @@
   }
 
   .card-img-overlay {
-    color: $textlight;
-    background-color: rgba($color: $textDark, $alpha: 0.3);
+    color: #f8f8f8;
+    background-color: rgba($color: #232d2f, $alpha: 0.3);
   }
 
   .card-img-overlay .container {

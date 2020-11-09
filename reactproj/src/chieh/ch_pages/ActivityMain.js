@@ -66,7 +66,7 @@ function ActivityMain(props) {
               )
             })}
           <div className="option align-self-center">
-            <button className="btn-option btn" onClick={()=>{props.history.push('/activitymain')}}>選擇方案</button>
+            <button type="button" className="btn-option btn" onClick={()=>{props.history.push('/activitymain')}}>選擇方案</button>
           </div>     
        </div>    
      </>
@@ -100,7 +100,7 @@ function ActivityMain(props) {
       <>
         <Breadcrumb/>
         <div className="activity-main">
-          <img src={"http://localhost:3000/ch_img/activity_demo9.jpg"} className="activitydemo"/>
+          <img src={"http://localhost:3000/ch_img/activity_demo9.jpg"} className="activity-demo"/>
           {introduction}          
           <div className="container">
             <ControlledTabs/>

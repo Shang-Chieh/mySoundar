@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import Carousel, { Dots } from '@brainhubeu/react-carousel';
 import '@brainhubeu/react-carousel/lib/style.css';
-import { Link,withRouter } from 'react-router-dom'
+import { withRouter } from 'react-router-dom'
 import Rater from 'react-rater'
 import 'react-rater/lib/react-rater.css'
 import Breadcrumb from '../ch_components/Breadcrumb'
@@ -9,7 +9,7 @@ import StudioInfo from '../ch_components/StudioInfo'
 import StudioOption from '../ch_components/StudioOption'
 import { FaMapMarkerAlt } from 'react-icons/fa'
 import { MdKeyboardArrowLeft, MdKeyboardArrowRight } from 'react-icons/md'
-import {  Tabs, Tab } from 'react-bootstrap';
+import { Tabs, Tab } from 'react-bootstrap';
 
 
 function StudioMain(props){

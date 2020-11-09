@@ -1,6 +1,6 @@
 import React from 'react'
-import { Link, Switch, withRouter } from 'react-router-dom'
-import { FaHotjar,FaMapMarkedAlt,FaRegCalendarAlt } from 'react-icons/fa'
+import { withRouter } from 'react-router-dom'
+import { FaHotjar,FaMapMarkedAlt } from 'react-icons/fa'
 import OptionCard from './OptionCard'
 
 function ActivityInfo(props) {
@@ -48,20 +48,9 @@ function ActivityInfo(props) {
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3615.0049657993086!2d121.5412041507614!3d25.03390554437016!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442abd379a5ec97%3A0xec12a62666a81e3d!2zMTA25Y-w5YyX5biC5aSn5a6J5Y2A5b6p6IiI5Y2X6Lev5LiA5q61Mzkw6Jmf!5e0!3m2!1szh-TW!2stw!4v1604138400418!5m2!1szh-TW!2stw" width="896" height="450" frameborder="0" style={{border:0}} allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
         </div>
         <OptionCard/>
-        {/* <div className="option-card">
-            <h5>跟上影音新浪潮｜Podcast企劃+影音內容+影音行銷</h5>
-            <p className="text-card"><FaRegCalendarAlt />2020/09/17</p>
-            <p className="text-card">15:00~17:00</p>
-            <button type="" className="btn btn-secondary" onClick={()=>{props.history.push('/activityoption')}}>選擇方案</button>
-        </div> */}
       </div>
     </>
   )
 }
 
-// wtihRouter引用放在export default
-// withRouter的三個重要屬性值
-// match: 主要要得到不同路徑的參數值
-// history: 對於瀏覽器書籤、前後移動的處理方法
-// location: 目前所在的位置(物件值)
 export default withRouter(ActivityInfo)

@@ -121,8 +121,8 @@
     height: 3rem;
     font-size: 2rem;
     font-weight: bold;
-    color: $textDarkGray;
-    border-left: 1.25rem solid $textDarkGray;
+    color: #232d2f;
+    border-left: 1.25rem solid #232d2f;
     padding-left: 0.625rem;
     margin-bottom: 3.625rem;
   }
@@ -193,16 +193,16 @@
     font-size: 1.5rem;
     font-weight: bold;
     line-height: 1.5;
-    color: $textDark;
+    color: #232d2f;
     border-radius: 30px;
-    border-color: $textDark;
+    border-color: #232d2f;
     background-color: transparent;
   }
 
   .btn-order:hover {
     color: #fff;
-    background-color: $textDark;
-    border-color: $textDark;
+    background-color: #232d2f;
+    border-color: #232d2f;
   }
 
   h3 {
@@ -235,10 +235,10 @@
     width: 20rem;
     font-size: 2rem;
     font-weight: bold;
-    color: $textDarkGray;
+    color: #232d2f;
     text-align: center;
-    border-left: 3px solid $textDarkGray;
-    border-right: 3px solid $textDarkGray;
+    border-left: 3px solid #232d2f;
+    border-right: 3px solid #232d2f;
     margin-bottom: 48px;
   }
 
@@ -254,7 +254,7 @@
 
   .nav-pills {
     .nav-link {
-      color: $textDarkGray;
+      color: #232d2f;
       border-radius: 0;
       border: none;
       opacity: 0.3;
