@@ -15,7 +15,6 @@ import { Tabs, Tab } from 'react-bootstrap';
 function StudioMain(props){
     const [studioData, setStudioData] = useState([])  
     async function getStudioFromServer() {
-      // 連接的伺服器資料網址
       const url = 'http://localhost:5566/studio/api/1'  
       const request = new Request(url, {
         method: 'GET',
@@ -29,11 +28,9 @@ function StudioMain(props){
       let arr = []
       arr.push(data)
       console.log(arr)
-      // 設定資料
       setStudioData(arr)
     }
   
-    // 一開始就會開始載入資料
     useEffect(() => {
         getStudioFromServer()
     }, [])
@@ -57,9 +54,6 @@ function StudioMain(props){
       }))}
     </>
   )
-
-
-
 
   //圖片切換
   class MyCarousel extends React.Component {

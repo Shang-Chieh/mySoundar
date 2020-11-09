@@ -9,8 +9,6 @@ import ActivityAttention from '../ch_components/ActivityAttention'
 import ActivityInfo from '../ch_components/ActivityInfo'
 import ActivityOption from '../ch_components/ActivityOption'
 
-
-
 function ActivityMain(props) {
     const [activityData, setActivityData] = useState([])
   
@@ -100,7 +98,11 @@ function ActivityMain(props) {
       <>
         <Breadcrumb/>
         <div className="activity-main">
-          <img src={"http://localhost:3000/ch_img/activity_demo9.jpg"} className="activity-demo"/>
+        {activityData.map((value)=>{
+          return (
+            <img key={value.sid} src= {value.activity_img} className="activity-demo"/>
+          )
+        })}
           {introduction}          
           <div className="container">
             <ControlledTabs/>

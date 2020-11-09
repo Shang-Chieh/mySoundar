@@ -40,14 +40,15 @@ function ActivityOption(props) {
               return (
               <div className="option-item d-flex justify-content-between" >
                 <div className="option-content">
-                  <h4 key={index}>{option}</h4>
+                  <h4 key={index}>{option.slice(0,3)}</h4>
                   <li>11/30前報名享早鳥優惠價</li>
+                  <li>三人團報享團體優惠價</li>
                   <li>課程附贈教材、午餐、午茶</li>
                   <li>每堂贈送《數位時代》三期 (課程隔月號起算)</li>            
                 </div>
                 <Accordion>                
                     <Card.Header className="d-flex flex-wrap justify-content-between">
-                      <span style={{fontSize : '2rem', fontWeight:'bold'}}>NT$ 4000 / 每人</span>
+                      <span style={{fontSize : '2rem', fontWeight:'bold'}}>NT$ {option.slice(4,9)} / 每人</span>
                       <Accordion.Toggle as={Button} eventKey="0" className="btn-select">
                         選擇
                       </Accordion.Toggle>
@@ -59,14 +60,14 @@ function ActivityOption(props) {
                         <div className="d-flex justify-content-between counter align-items-center">
                           <span>人數</span>
                           <div className="d-flex justify-content-between align-items-center">
-                            <MdRemoveCircleOutline style={{ fontSize: '2rem', color: quantity ==1 ? '#909393' : '#232d2f' }} 
+                            <MdRemoveCircleOutline style={{ fontSize: '2rem', color: quantity ===1 ? '#909393' : '#232d2f' }} 
                             onClick={() => {
                               quantity === 1 ?
                               alert('數量不可低於一張')
                               : setQuantity(quantity - 1)
                               }}/>
                             <span style={{ fontSize: '2rem' }}>{quantity}</span>
-                            <MdAddCircleOutline style={{ fontSize: '2rem', color: quantity ==3 ? '#909393' : '#232d2f' }} 
+                            <MdAddCircleOutline style={{ fontSize: '2rem', color: quantity ===3 ? '#909393' : '#232d2f' }} 
                             onClick={() => {
                               quantity === 3 ?
                               alert('每人限購三張')
