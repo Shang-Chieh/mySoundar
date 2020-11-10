@@ -82,7 +82,7 @@ function ActivityMain(props) {
           className="nav-pills d-flex justify-content-around"
         >
           <Tab eventKey="option" title="方案票價">
-            <ActivityOption/>
+            <ActivityOption activityData={activityData} setActivityData={setActivityData}/>
           </Tab>
           <Tab eventKey="info" title="活動內容">
             <ActivityInfo/>

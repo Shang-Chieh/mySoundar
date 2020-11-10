@@ -194,8 +194,27 @@
     width: 470px;
   }
 
+  .accordion {
+    .card {
+      background-color: transparent;
+      border: none;
+      border-radius: 0;
+    }
+    .card-header {
+      padding: 0;
+      margin-bottom: 0;
+      background-color: transparent;
+      border: none;
+      width: 470px;
+    }
+    .card-body {
+      padding: 0;
+    }
+  }
+
   .option-content > li {
     font-size: 1rem;
+    margin-bottom: 16px;
   }
 
   .option-content > h4 {
@@ -206,10 +225,6 @@
   .counter > span {
     font-size: 1.5rem;
     font-weight: bold;
-  }
-
-  #example-collapse-studio {
-    width: 470px;
   }
 
   .card {

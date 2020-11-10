@@ -29,7 +29,7 @@ function StudioMain(props){
       arr.push(data)
       console.log(arr)
       setStudioData(arr)
-    }
+    }    
   
     useEffect(() => {
         getStudioFromServer()
@@ -105,10 +105,10 @@ function StudioMain(props){
             id="controlled-tab-studio"
             activeKey={key}
             onSelect={(k) => setKey(k)}
-            className="nav-pills-studio d-flex justify-content-around"
+            className="nav-pills-studio d-flex justify-content-between"
           >
             <Tab eventKey="option" title="方案">
-                <StudioOption />              
+                <StudioOption studioData={studioData} setStudioData={setStudioData}/>              
             </Tab>
             <Tab eventKey="info" title="介紹">
                 <StudioInfo />              

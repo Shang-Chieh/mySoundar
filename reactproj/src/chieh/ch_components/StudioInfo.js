@@ -3,29 +3,24 @@ import { withRouter } from 'react-router-dom'
 import { Card } from 'react-bootstrap'
 
 
-
 function StudioInfo(props) {
 
     return (
-      <>
-      
+      <>      
         <Card className="">
           <Card.Img src="http://localhost:3000/ch_img/jumbotron04.jpg" alt="Card image" />
           <Card.ImgOverlay >
             <div className="container" >
               <Card.Title><h1 style={{color: '#f8f8f8'}}>LAZI Corner</h1></Card.Title>
               <Card.Text>
-                <h5 className="mb-4 mt-5" style={{color: '#f8f8f8'}}>全台北最懂 podcaster 的錄音室</h5>
-                <h5 style={{color: '#f8f8f8'}}>這裡讓你的唇舌可以盡情發揮，優異的設備、很 Lazy 的空間，</h5>
-                <h5 style={{color: '#f8f8f8'}}>此外更齊聚全台熱門 Podcast 節目主持人！</h5>
-                <h5 style={{color: '#f8f8f8'}}>想加入 Podcast 這個大家庭，那麼這裡會是你的首選。</h5>
+                <h5 className="mb-4 mt-5">全台北最懂 podcaster 的錄音室</h5>
+                <h5>這裡讓你的唇舌可以盡情發揮，優異的設備、很 Lazy 的空間，</h5>
+                <h5>此外更齊聚全台熱門 Podcast 節目主持人！</h5>
+                <h5>想加入 Podcast 這個大家庭，那麼這裡會是你的首選。</h5>
               </Card.Text>
             </div>            
           </Card.ImgOverlay>
         </Card>
-
-
-
 
         <div className="container studio-info">
           <h3>我們的設備</h3>
@@ -76,8 +71,8 @@ function StudioInfo(props) {
           <Card.ImgOverlay>
           <div className="container">
             <Card.Text>
-              <h5 style={{color: '#f8f8f8'}}>裝潢很 Chill，環境很 Cozy，以後都要來這裡錄音了</h5>
-              <h5 style={{color: '#f8f8f8'}}>- 寂寞拖延 節目主持人 Allen</h5>
+              <h5>裝潢很 Chill，環境很 Cozy，以後都要來這裡錄音了</h5>
+              <h5>- 寂寞拖延 節目主持人 Allen</h5>
             </Card.Text>
             </div>
           </Card.ImgOverlay>
@@ -103,11 +98,11 @@ function StudioInfo(props) {
           <Card.Img src="http://localhost:3000/ch_img/jumbotron06.jpg" alt="Card image" />
           <Card.ImgOverlay>
           <div className="container">
-            <Card.Title><h1 style={{color: '#f8f8f8'}}>一起 LAZI ?</h1></Card.Title>
+            <Card.Title><h1>一起 LAZI ?</h1></Card.Title>
             <Card.Text className="mt-5">
-            <h5 style={{color: '#f8f8f8'}}>想要成為podcast? 有錄音的需求?</h5>
-            <h5 style={{color: '#f8f8f8'}}>一起成為錄音夥伴</h5>
-            <h5 style={{color: '#f8f8f8'}}>我們的收費標準是每小時500元，趕快訂位吧。</h5>
+            <h5>想要成為podcast? 有錄音的需求?</h5>
+            <h5>一起成為錄音夥伴</h5>
+            <h5>我們的收費標準是每小時500元，趕快訂位吧。</h5>
             </Card.Text>
             </div>
           </Card.ImgOverlay>
