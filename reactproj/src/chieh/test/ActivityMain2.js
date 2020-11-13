@@ -2,8 +2,7 @@ import React, { useState, useEffect } from 'react'
 import { FaRegCalendarAlt,FaMapMarkerAlt,FaTags } from 'react-icons/fa'
 import { withRouter } from 'react-router-dom'
 import { Tabs, Tab } from 'react-bootstrap';
-import './../ch_styles/custom.scss';
-// import Breadcrumb from '../ch_components/Breadcrumb'
+import Breadcrumb from '../ch_components/Breadcrumb'
 
 //方案票價、活動內容、注意事項
 import ActivityAttention from '../ch_components/ActivityAttention'
@@ -13,10 +12,10 @@ import OptionCard from '../ch_components/OptionCard'
 
 function ActivityMain(props) {
     const [activityData, setActivityData] = useState([])
-    const [newActivity, setNewActivity] = useState([])
+    const [newData, setNewData] = useState([])
   
     async function getActivityFromServer() {
-      const url = 'http://localhost:5566/activity/option/1'
+      const url = 'http://localhost:5566/activity/option/5'
       const request = new Request(url, {
         method: 'GET',
         headers: new Headers({
@@ -28,7 +27,7 @@ function ActivityMain(props) {
       const response = await fetch(request)
       const data = await response.json()
       console.log(data)
-      setNewActivity(data)
+      setNewData(data)
       let arr = []
       arr.push(data)
       console.log(arr)
@@ -87,10 +86,7 @@ function ActivityMain(props) {
           className="nav-pills d-flex justify-content-around"
         >
           <Tab eventKey="option" title="方案票價">
-            <ActivityOption 
-            activityData={activityData} setActivityData={setActivityData}
-            newActivity={newActivity} setNewActivity={setNewActivity} 
-            />
+            <ActivityOption activityData={activityData} setActivityData={setActivityData}/>
           </Tab>
           <Tab eventKey="info" title="活動內容">
           <div className="container d-flex">
@@ -111,9 +107,8 @@ function ActivityMain(props) {
 
     return (
       <>
-        
+        <Breadcrumb/>
         <div className="activity-main">
-        {/* <Breadcrumb/> */}
         {activityData.map((item)=>{
           return (
             <img key={item} src= {item[0].activity_img} className="activity-demo"/>

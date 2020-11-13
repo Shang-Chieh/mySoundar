@@ -146,14 +146,14 @@ function ActivityOption(props) {
                               <Form.Group as={Row} controlId="formPlaintextPassword">
                                 <Form.Label column sm="2">數量</Form.Label>
                                 <Col sm="10">
-                                  <Form.Control plaintext readOnly defaultValue={quantity0} />
+                                  <Form.Control plaintext readOnly defaultValue={quantity} />
                                 </Col>
                               </Form.Group>
 
                               <Form.Group as={Row} controlId="formPlaintextPassword">
                                 <Form.Label column sm="2">小計</Form.Label>
                                 <Col sm="10">
-                                  <Form.Control plaintext readOnly defaultValue={`${quantity0}`*`${item.ticket_price}`} />
+                                  <Form.Control plaintext readOnly defaultValue={`${quantity}`*`${item.ticket_price}`} />
                                 </Col>
                               </Form.Group>  
                               <hr />
